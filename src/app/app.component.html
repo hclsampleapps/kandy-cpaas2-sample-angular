@@ -1,0 +1,11 @@
+<div class="app-container">
+  <mat-toolbar color="primary">
+    <span>Audio and Video Chat Application</span>
+    <button mat-icon-button (click)="Logout()" style="position: absolute; right: 10px">
+      <mat-icon>power_settings_new</mat-icon>
+    </button>
+  </mat-toolbar>
+  <div class="app-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+mat-card {
+    margin-bottom: 10px;
+  }
+  
+  mat-card {
+    border-top: 1px solid whitesmoke;
+  
+  }
+  mat-card-actions {
+    margin: 5px 2px 5px 2px;
+    display: inline-block;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  .call-card {
+    
+  }
+  
+  .video-card {
+    width: 320px;
+    display: inline-block;
+  }
+  
+  .gap-rt {
+    margin-right: 10px;
+  }
+  
+  #remote-container {
+    background: slategrey;
+    width: 320px;
+    height: 280px;
+  }
+  
+  #local-container {
+    background: slategrey;
+    width: 320px;
+    height: 280px;
+  }
+  
+  #console {
+    background-color: darkslategrey;
+    color: white;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    padding: 5px 5px;
+  }
+  

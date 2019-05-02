@@ -1,0 +1,9 @@
+mat-card {
+	margin-bottom: 10px;
+}
+mat-card mat-card-actions {
+	border-top: 1px solid whitesmoke;
+}
+mat-form-field.login-full-width {
+	width: 100%;
+}

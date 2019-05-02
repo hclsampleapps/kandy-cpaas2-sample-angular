@@ -1,0 +1,26 @@
+<mat-card class="login-card">
+  <mat-card-title>Login</mat-card-title>
+  <mat-card-content>
+    <mat-form-field class="login-full-width">
+      <input matInput placeholder="Server URL" [(ngModel)]="serverurl" [value]="serverurl" name="serverurl" required>
+    </mat-form-field>
+    <mat-form-field class="login-full-width">
+      <input matInput placeholder="Client ID" [(ngModel)]="clientid" [value]="clientid" name="clientid" required>
+    </mat-form-field>
+    <mat-form-field class="login-full-width">
+      <input matInput placeholder="Username" [(ngModel)]="user" [value]="user" name="user" required>
+    </mat-form-field>
+    <mat-form-field class="login-full-width">
+      <input matInput placeholder="Password" [(ngModel)]="pass" [value]="pass" type="password" name="pass" required>
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="login()" color="primary" id="log">Login</button>
+  </mat-card-actions>
+</mat-card>
+<mat-card class="log-card">
+  <mat-card-title>Messages</mat-card-title>
+  <mat-card-content>
+    <div id="messages">{{ message }}</div>
+  </mat-card-content>
+</mat-card>
