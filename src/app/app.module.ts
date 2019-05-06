@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { CallComponent } from './call/call.component';
 import { LoginComponent } from './login/login.component';
 import { MatFormFieldModule } from '@angular/material';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { MatFormFieldModule } from '@angular/material';
         AppRoutingModule,
         SharedModule,
         FormsModule,
-        MatFormFieldModule
+        MatFormFieldModule,
+        MatRadioModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -158,12 +158,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _call_call_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./call/call.component */ "./src/app/call/call.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_material_radio__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/radio */ "./node_modules/@angular/material/esm5/radio.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -190,7 +192,8 @@ var AppModule = /** @class */ (function () {
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
                 _shared_shared_module__WEBPACK_IMPORTED_MODULE_6__["SharedModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatFormFieldModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatFormFieldModule"],
+                _angular_material_radio__WEBPACK_IMPORTED_MODULE_10__["MatRadioModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
@@ -401,7 +404,7 @@ module.exports = "mat-card {\n\tmargin-bottom: 10px;\n}\nmat-card mat-card-actio
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"login-card\">\n  <mat-card-title>Login</mat-card-title>\n  <mat-card-content>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Server URL\" [(ngModel)]=\"serverurl\" [value]=\"serverurl\" name=\"serverurl\" required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Client ID\" [(ngModel)]=\"clientid\" [value]=\"clientid\" name=\"clientid\" required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Username\" [(ngModel)]=\"user\" [value]=\"user\" name=\"user\" required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Password\" [(ngModel)]=\"pass\" [value]=\"pass\" type=\"password\" name=\"pass\" required>\n    </mat-form-field>\n  </mat-card-content>\n  <mat-card-actions>\n    <button mat-raised-button (click)=\"login()\" color=\"primary\" id=\"log\">Login</button>\n  </mat-card-actions>\n</mat-card>\n<mat-card class=\"log-card\">\n  <mat-card-title>Messages</mat-card-title>\n  <mat-card-content>\n    <div id=\"messages\">{{ message }}</div>\n  </mat-card-content>\n</mat-card>"
+module.exports = "<mat-card class=\"login-card\">\n  <mat-card-title>Login</mat-card-title>\n  <mat-card-content>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Server URL\" [(ngModel)]=\"serverurl\" [value]=\"serverurl\" name=\"serverurl\" required>\n    </mat-form-field>\n    <mat-radio-group (change)=\"onChangeLoginType($event)\" [(ngModel)]=\"loginType\">\n      <mat-radio-button style=\"padding : 8px\" value=\"passwordGrant\">Password Grant</mat-radio-button>\n      <mat-radio-button style=\"padding : 8px\" value=\"clientCredentials\">Client Credentials</mat-radio-button>\n    </mat-radio-group>\n  </mat-card-content>\n  <mat-card-content *ngIf=\"loginType == 'passwordGrant'\">\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Client ID\" [(ngModel)]=\"clientid\" [value]=\"clientid\" name=\"clientid\" required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Username\" [(ngModel)]=\"user\" [value]=\"user\" name=\"user\" required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Password\" [(ngModel)]=\"pass\" [value]=\"pass\" type=\"password\" name=\"pass\" required>\n    </mat-form-field>\n  </mat-card-content>\n  <mat-card-content *ngIf=\"loginType == 'clientCredentials'\">\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Private project key\" [(ngModel)]=\"privateKey\" [value]=\"privateKey\" name=\"privateKey\" required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Private project secret\" [(ngModel)]=\"privateSecret\" [value]=\"privateSecret\" name=\"privateSecret\" required>\n    </mat-form-field>\n  </mat-card-content>\n  <mat-card-actions>\n    <button mat-raised-button (click)=\"login()\" color=\"primary\" id=\"log\">Login</button>\n  </mat-card-actions>\n</mat-card>\n<mat-card class=\"log-card\">\n  <mat-card-title>Messages</mat-card-title>\n  <mat-card-content>\n    <div id=\"messages\">{{ message }}</div>\n  </mat-card-content>\n</mat-card>\n"
 
 /***/ }),
 
@@ -472,6 +475,9 @@ var LoginComponent = /** @class */ (function () {
         this.pass = '';
         this.message = '';
         this.serverurl = '';
+        this.loginType = 'passwordGrant';
+        this.privateKey = '';
+        this.privateSecret = '';
         window['LoginComponent'] = { component: this, zone: _ngZone };
     }
     LoginComponent.prototype.ngOnInit = function () {
@@ -485,14 +491,90 @@ var LoginComponent = /** @class */ (function () {
         });
         return keyValuePairs.join('&');
     };
+    LoginComponent.prototype.onChangeLoginType = function (mrChange) {
+        this.loginType = mrChange.value;
+    };
     LoginComponent.prototype.login = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var formBody, fetchResult, data, cred, services, subscriptionType;
+            var tokens, error_1, services, subscriptionType, tokens, error_2, services, subscriptionType;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        if (!(this.user && this.pass && this.clientid)) return [3 /*break*/, 5];
-                        if (!confirm('You have successfully logged in. Please click OK to subscribe.')) return [3 /*break*/, 3];
+                        if (!(this.loginType == 'passwordGrant')) return [3 /*break*/, 9];
+                        if (!(this.user && this.pass && this.clientid)) return [3 /*break*/, 7];
+                        if (!confirm('You have successfully logged in. Please click OK to subscribe.')) return [3 /*break*/, 5];
+                        _a.label = 1;
+                    case 1:
+                        _a.trys.push([1, 3, , 4]);
+                        return [4 /*yield*/, this.getTokensByPasswordGrant()];
+                    case 2:
+                        tokens = _a.sent();
+                        kandy.setTokens(tokens);
+                        this.log('Successfully logged in as ' + this.user);
+                        return [3 /*break*/, 4];
+                    case 3:
+                        error_1 = _a.sent();
+                        this.log('Error: Failed to get authentication tokens. Error: ' + error_1);
+                        return [3 /*break*/, 4];
+                    case 4:
+                        services = ['call'];
+                        subscriptionType = 'websocket';
+                        kandy.services.subscribe(services, subscriptionType);
+                        this._router.navigate(['/call']);
+                        return [3 /*break*/, 6];
+                    case 5:
+                        this.clientid = '';
+                        this.user = '';
+                        this.pass = '';
+                        this.log('Please login prior moving to next page!');
+                        _a.label = 6;
+                    case 6: return [3 /*break*/, 8];
+                    case 7:
+                        alert('Please enter your login details first');
+                        _a.label = 8;
+                    case 8: return [3 /*break*/, 17];
+                    case 9:
+                        if (!(this.privateKey && this.privateSecret)) return [3 /*break*/, 16];
+                        if (!confirm('You have successfully logged in. Please click OK to subscribe.')) return [3 /*break*/, 14];
+                        _a.label = 10;
+                    case 10:
+                        _a.trys.push([10, 12, , 13]);
+                        return [4 /*yield*/, this.getTokensByClientCredGrant()];
+                    case 11:
+                        tokens = _a.sent();
+                        kandy.setTokens(tokens);
+                        this.log('Successfully logged in with project User ' + this.privateKey);
+                        return [3 /*break*/, 13];
+                    case 12:
+                        error_2 = _a.sent();
+                        this.log('Error: Failed to get authentication tokens. Error: ' + error_2);
+                        return [3 /*break*/, 13];
+                    case 13:
+                        services = ['call'];
+                        subscriptionType = 'websocket';
+                        kandy.services.subscribe(services, subscriptionType);
+                        this._router.navigate(["/call"]);
+                        return [3 /*break*/, 15];
+                    case 14:
+                        this.privateKey = '';
+                        this.privateSecret = '';
+                        this.log('Please login prior moving to next page!');
+                        _a.label = 15;
+                    case 15: return [3 /*break*/, 17];
+                    case 16:
+                        alert('Please enter your Client Credentials first');
+                        _a.label = 17;
+                    case 17: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    LoginComponent.prototype.getTokensByPasswordGrant = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var formBody, fetchResult, data;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
                         formBody = this.createFormBody({
                             client_id: this.clientid,
                             username: this.user,
@@ -514,34 +596,44 @@ var LoginComponent = /** @class */ (function () {
                         return [4 /*yield*/, fetchResult.json()];
                     case 2:
                         data = _a.sent();
-                        this.log('LoginComponent, login', data);
-                        cred = {
-                            accessToken: data.access_token,
-                            idToken: data.id_token
-                        };
-                        try {
-                            kandy.setTokens(cred);
-                            this.log('Successfully logged in as ' + this.user);
-                        }
-                        catch (error) {
-                            this.log('Error: Failed to get authentication tokens. Error: ' + error);
-                        }
-                        services = ['call'];
-                        subscriptionType = 'websocket';
-                        kandy.services.subscribe(services, subscriptionType);
-                        this._router.navigate(['/call']);
-                        return [3 /*break*/, 4];
-                    case 3:
-                        this.clientid = '';
-                        this.user = '';
-                        this.pass = '';
-                        this.log('Please login prior moving to next page!');
-                        _a.label = 4;
-                    case 4: return [3 /*break*/, 6];
-                    case 5:
-                        alert('Please enter your login details first');
-                        _a.label = 6;
-                    case 6: return [2 /*return*/];
+                        return [2 /*return*/, {
+                                accessToken: data.access_token,
+                                idToken: data.id_token
+                            }];
+                }
+            });
+        });
+    };
+    LoginComponent.prototype.getTokensByClientCredGrant = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var formBody, fetchResult, data;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        formBody = this.createFormBody({
+                            client_id: this.privateKey,
+                            client_secret: this.privateSecret,
+                            grant_type: 'client_credentials',
+                            scope: 'openid regular_call'
+                        });
+                        return [4 /*yield*/, fetch(this.serverurl, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/x-www-form-urlencoded'
+                                },
+                                body: formBody
+                            })
+                            // Parse the result of the fetch as a JSON format.
+                        ];
+                    case 1:
+                        fetchResult = _a.sent();
+                        return [4 /*yield*/, fetchResult.json()];
+                    case 2:
+                        data = _a.sent();
+                        return [2 /*return*/, {
+                                accessToken: data.access_token,
+                                idToken: data.id_token
+                            }];
                 }
             });
         });
