@@ -4,6 +4,10 @@ let connectStatus = false;
 //let userid = "hcl4@trials.com";
 let pass;
 
+let base1 = 'nvs-cpaas-oauth.kandy.io';
+let base2 = 'oauth-cpaas.att.com';
+let kandy;
+
   /* log.addEventListener("click", function(e) {
     console.log("user..", user.value)
     if (user.value == "") {
@@ -28,18 +32,33 @@ let pass;
 //     chromeExtensionId: 'abc123...'
 // }
 
-let kandy = Kandy.create({
+if(base1) {
+  kandy = Kandy.create({
     subscription: {
       expires: 3600
     },
     // Required: Server connection configs.
     authentication: {
       server: {
-        base: 'nvs-cpaas-oauth.kandy.io'
+        base: base1
       },
       clientCorrelator: 'sampleCorrelator'
     }
   })
+} else if(base2) {
+  kandy = Kandy.create({
+    subscription: {
+      expires: 3600
+    },
+    // Required: Server connection configs.
+    authentication: {
+      server: {
+        base: base2
+      },
+      clientCorrelator: 'sampleCorrelator'
+    }
+  })
+}
 
 let getUser = function(name)
 {    

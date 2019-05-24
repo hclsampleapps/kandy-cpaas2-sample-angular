@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
     pass: string = '';
     message: string = '';
     serverurl: string = '';
+    fullUrl: string = '/cpaas/auth/v1/token';
     loginType: string = 'passwordGrant';
     privateKey: string = '';
     privateSecret: string = '';
@@ -101,7 +102,7 @@ export class LoginComponent implements OnInit {
         })
 
         // POST a request to create a new authentication access token.
-        const fetchResult = await fetch(this.serverurl, {
+        const fetchResult = await fetch(this.serverurl + this.fullUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -127,7 +128,7 @@ export class LoginComponent implements OnInit {
         })
 
         // POST a request to create a new authentication access token.
-        const fetchResult = await fetch(this.serverurl, {
+        const fetchResult = await fetch(this.serverurl + this.fullUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -142,7 +143,6 @@ export class LoginComponent implements OnInit {
             idToken: data.id_token
         }
     }
-
     log(...args) {
         let message: string = '&#10095; ';
         for (let i = 0; i < args.length; i++) {
