@@ -18,7 +18,15 @@ export class AppComponent implements OnInit {
 	}
 
 	Logout() {
-		this.router.navigate(['/login']);
+		var username = localStorage.getItem('Username');
+		var priKey = localStorage.getItem('PrivateKey');
+		var priSecret = localStorage.getItem('PrivateSecret');
+		if (username || priKey || priSecret) {
+			this.router.navigate(['/login']);
+			localStorage.removeItem('Username')
+			localStorage.removeItem('PrivateKey')
+			localStorage.removeItem('PrivateSecret')
+		}
 	}
 
 }

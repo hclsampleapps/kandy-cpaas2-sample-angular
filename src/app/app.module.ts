@@ -7,14 +7,24 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { CallComponent } from './call/call.component';
 import { LoginComponent } from './login/login.component';
-import { MatFormFieldModule } from '@angular/material';
+import { MatFormFieldModule, MatSelectModule } from '@angular/material';
 import { MatRadioModule } from '@angular/material/radio';
+import { SmsComponent } from './sms/sms.component';
+import { ChatComponent } from './chat/chat.component';
+import { PresenceComponent } from './presence/presence.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { KandyService } from './kandy.service';
 
 @NgModule({
     declarations: [
         AppComponent,
         CallComponent,
-        LoginComponent
+        LoginComponent,
+        SmsComponent,
+        ChatComponent,
+        PresenceComponent,
+        DashboardComponent
     ],
     imports: [
         BrowserModule,
@@ -23,7 +33,9 @@ import { MatRadioModule } from '@angular/material/radio';
         SharedModule,
         FormsModule,
         MatFormFieldModule,
-        MatRadioModule
+        MatRadioModule,
+        HttpClientModule,
+        MatSelectModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -19,13 +19,23 @@
     <mat-form-field class="login-full-width">
       <input matInput placeholder="Password" [(ngModel)]="pass" [value]="pass" type="password" name="pass" required>
     </mat-form-field>
+    <mat-form-field class="login-full-width">
+      <input matInput placeholder="Contact Number" [(ngModel)]="contact" [value]="contact" type="text" name="contact"
+        required>
+    </mat-form-field>
   </mat-card-content>
   <mat-card-content *ngIf="loginType == 'clientCredentials'">
     <mat-form-field class="login-full-width">
-      <input matInput placeholder="Private project key" [(ngModel)]="privateKey" [value]="privateKey" name="privateKey" required>
+      <input matInput placeholder="Private project key" [(ngModel)]="privateKey" [value]="privateKey" name="privateKey"
+        required>
     </mat-form-field>
     <mat-form-field class="login-full-width">
-      <input matInput placeholder="Private project secret" [(ngModel)]="privateSecret" [value]="privateSecret" name="privateSecret" required>
+      <input matInput placeholder="Private project secret" [(ngModel)]="privateSecret" [value]="privateSecret"
+        name="privateSecret" required>
+    </mat-form-field>
+    <mat-form-field class="login-full-width">
+      <input matInput placeholder="Contact Number" [(ngModel)]="contact" [value]="contact" type="text" name="contact"
+        required>
     </mat-form-field>
   </mat-card-content>
   <mat-card-actions>
