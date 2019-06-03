@@ -15,6 +15,8 @@ import { PresenceComponent } from './presence/presence.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { KandyService } from './kandy.service';
+import { AddressDirectoryComponent } from './address-directory/address-directory.component';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
     declarations: [
@@ -24,7 +26,8 @@ import { KandyService } from './kandy.service';
         SmsComponent,
         ChatComponent,
         PresenceComponent,
-        DashboardComponent
+        DashboardComponent,
+        AddressDirectoryComponent
     ],
     imports: [
         BrowserModule,
@@ -37,7 +40,7 @@ import { KandyService } from './kandy.service';
         HttpClientModule,
         MatSelectModule
     ],
-    providers: [],
+    providers: [AuthGuard],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

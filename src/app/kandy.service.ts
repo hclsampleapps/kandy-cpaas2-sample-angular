@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { create } from '../scripts/kandy';
+import { create } from '../scripts/kandy2';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { URLSearchParams } from '@angular/http';
 
@@ -78,7 +78,7 @@ export class KandyService {
   }
 
   get isLoggedIn() {
-    return localStorage.getItem('LoggedInUser') || localStorage.getItem('PrivateKey')
+    return localStorage.getItem('LoggedInUser') || localStorage.getItem('PrivateKey') || localStorage.getItem('PrivateSecret')
   }
 
   subscribing() {

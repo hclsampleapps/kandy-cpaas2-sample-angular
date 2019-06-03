@@ -31,4 +31,8 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(['/presence'])
   }
 
+  addressDirectory() {
+    this.router.navigate(['/addressDirectory'])
+  }
+
 }
