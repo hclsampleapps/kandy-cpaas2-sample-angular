@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { create } from '../scripts/kandy2';
+import { create } from '../scripts/kandy';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { URLSearchParams } from '@angular/http';
 
