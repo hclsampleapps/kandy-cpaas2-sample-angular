@@ -1,0 +1,77 @@
+.dropdown  {
+    padding: 4px;
+    float: right;
+    display: inline-block;
+    flex-direction: row;
+}
+
+.title {
+    display: inline-block;
+    float: left;
+    /* padding: 10px; */
+}
+
+.text {
+    display: inline-block;
+    flex-direction: row;
+    /* padding: 7px; */
+}
+/* h4 {
+    margin-right: 15px;
+} */
+
+#list {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+#radio {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-left: 10px;
+    /* ion-label {
+        padding: 0.5px;
+        margin-left: 5px;
+    } */
+}
+
+mat-card {
+	margin-bottom: 10px;
+}
+mat-card mat-card-actions {
+	border-top: 1px solid whitesmoke;
+}
+mat-form-field.login-full-width {
+	width: 100%;
+}
+
+
+#message-logs {
+    background: lightgrey;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+}
+
+table, td, th {  
+    border: 2px solid #ddd;
+    text-align: left;
+}
+  
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+  
+th, td {
+    padding: 10px;
+}
+
+button {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
