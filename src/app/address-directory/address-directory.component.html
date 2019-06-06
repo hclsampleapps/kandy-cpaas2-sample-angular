@@ -10,12 +10,13 @@
   <mat-card-content *ngIf="loginType == 'directory'">
     <mat-card-title>Directory API</mat-card-title>
     <div class="dropdown">
-      <mat-label style="font-size: 16px">Users : </mat-label>
+      <mat-label style="font-size: 16px;">Users: </mat-label>
       <mat-select id="statusDropdown" [(ngModel)]="selectedUser" (selectionChange)="userList(selectedUser)"
         placeholder="Select One">
         <mat-option *ngFor="let userInfo of currentUsers" [value]="userInfo">{{userInfo}}</mat-option>
       </mat-select>
     </div>
+    <br>
     <div>
 
       <mat-form-field class="login-full-width">
@@ -26,7 +27,7 @@
     </div>
 
     <h3>Filters : </h3>
-    <mat-radio-group (change)="selectOption(value)">
+    <mat-radio-group (change)="selectOption($event)">
       <mat-radio-button style="padding : 8px" value="name" checked>Name (First or Last)</mat-radio-button>
       <mat-radio-button style="padding : 8px" value="firstName">First Name</mat-radio-button>
       <mat-radio-button style="padding : 8px" value="lastName">Last Name</mat-radio-button>
@@ -81,19 +82,16 @@
       <mat-label><b>Email : </b></mat-label>
       <input matInput placeholder="Enter Email" [(ngModel)]="email" [value]="email" name="email" required>
     </mat-form-field>
-
-    <mat-form-field class="login-full-width">
-      <mat-label><b>Buddy : </b></mat-label>
-      <input matInput placeholder="Enter Email" [(ngModel)]="buddy" [value]="buddy" name="buddy" required>
-    </mat-form-field>
-
+    <br>
+    <mat-checkbox [(ngModel)]="buddy" [value]="buddy" name="buddy" required> Buddy </mat-checkbox>
+    <br> <br>
     <button mat-raised-button (click)="refreshContacts()" color="primary" id="log">Refresh Contacts</button>
     <button mat-raised-button (click)="addContacts()" color="primary" id="log">Add Contacts</button>
     <button mat-raised-button (click)="removeContacts()" color="primary" id="log">Remove Contacts</button>
     <button mat-raised-button (click)="updateContacts()" color="primary" id="log">Update Contacts</button>
     <button mat-raised-button (click)="clearContacts()" color="primary" id="log">Clear Contacts</button>
-
-    <mat-label>Contacts List : </mat-label>
+    <br> <br>
+    <mat-label> <b> Contact List : </b> </mat-label>
     <div id="contactList">
       <table id="table">
         <!-- <tr>

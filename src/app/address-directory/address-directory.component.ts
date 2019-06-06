@@ -64,11 +64,13 @@ export class AddressDirectoryComponent implements OnInit {
   //   }
   // }
 
-  selectOption(option: any) {
-    console.log('event fires --', event);
+  selectOption(mrChange: MatRadioChange) {
+    // console.log('event fires --', event);
     // console.log((<HTMLInputElement>event.target).nextElementSibling.innerText);
     // console.log((event.srcElement as HTMLElement).nextElementSibling.innerText);
-    this.option = (<CustomEvent>event).detail.value;
+    // console.log((event.target as HTMLElement).nextElementSibling.textContent);
+    // this.option = (event.target as HTMLElement).nextElementSibling.textContent;
+    this.option = mrChange.value;
     console.log(this.option);
   }
 
@@ -213,7 +215,7 @@ export class AddressDirectoryComponent implements OnInit {
   }
 
   log(message: any) {
-    var messageDiv = document.getElementById('messageLlogs');
+    var messageDiv = document.getElementById('messageLogs');
     messageDiv.innerHTML += '<div>' + message + '</div>';
     messageDiv.scrollTop = messageDiv.scrollHeight;
     messageDiv.scrollIntoView(false)

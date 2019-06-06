@@ -5,20 +5,16 @@
     flex-direction: row;
 }
 
-.title {
+/* .title {
     display: inline-block;
     float: left;
-    /* padding: 10px; */
 }
 
 .text {
     display: inline-block;
     flex-direction: row;
-    /* padding: 7px; */
-}
-/* h4 {
-    margin-right: 15px;
 } */
+
 
 #list {
     display: flex;

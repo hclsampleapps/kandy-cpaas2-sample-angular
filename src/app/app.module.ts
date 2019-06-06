@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { CallComponent } from './call/call.component';
 import { LoginComponent } from './login/login.component';
-import { MatFormFieldModule, MatSelectModule } from '@angular/material';
+import { MatFormFieldModule, MatSelectModule, MatCheckboxModule } from '@angular/material';
 import { MatRadioModule } from '@angular/material/radio';
 import { SmsComponent } from './sms/sms.component';
 import { ChatComponent } from './chat/chat.component';
@@ -38,7 +38,8 @@ import { AuthGuard } from './auth.guard';
         MatFormFieldModule,
         MatRadioModule,
         HttpClientModule,
-        MatSelectModule
+        MatSelectModule,
+        MatCheckboxModule
     ],
     providers: [AuthGuard],
     bootstrap: [AppComponent]

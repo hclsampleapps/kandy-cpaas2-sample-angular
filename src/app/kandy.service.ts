@@ -66,11 +66,11 @@ export class KandyService {
       console.log('Subscription Error: ' + params.error.message + ' (' + params.error.code + ')');
     })
 
-    window.onload = () => {
-      localStorage.removeItem('LoggedInUser');
-      localStorage.removeItem('PrivateKey');
-      localStorage.removeItem('PrivateSecret');
-    }
+    // window.on = () => {
+    //   localStorage.removeItem('LoggedInUser');
+    //   localStorage.removeItem('PrivateKey');
+    //   localStorage.removeItem('PrivateSecret');
+    // }
   }
 
   setLoggedIn(value: boolean) {

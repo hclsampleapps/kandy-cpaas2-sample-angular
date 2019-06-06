@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
     login() {
         if (this.loginType == 'passwordGrant') {
             if (this.user && this.pass && this.clientid && this.contact) {
-                localStorage.setItem('Username', this.user);
+                // localStorage.setItem('LoggedInUser', this.user);
                 this.ks.client.updateConfig({ messaging: { 'contact': this.contact } })
                 this.ks.getTokenPassGrant(this.user, this.pass, this.clientid, this.serverurl).subscribe((response: any) => {
                     console.log(response);
