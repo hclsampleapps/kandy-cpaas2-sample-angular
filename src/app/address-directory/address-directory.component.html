@@ -8,9 +8,9 @@
   </mat-card-content>
 
   <mat-card-content *ngIf="loginType == 'directory'">
-    <mat-card-title>Directory API</mat-card-title>
-    <div class="dropdown">
-      <mat-label style="font-size: 16px;">Users: </mat-label>
+    <mat-card-title id="title">Directory API</mat-card-title>
+    <div id="dropdown">
+      <mat-label id="label">Users: </mat-label>
       <mat-select id="statusDropdown" [(ngModel)]="selectedUser" (selectionChange)="userList(selectedUser)"
         placeholder="Select One">
         <mat-option *ngFor="let userInfo of currentUsers" [value]="userInfo">{{userInfo}}</mat-option>
@@ -18,21 +18,22 @@
     </div>
     <br>
     <div>
-
       <mat-form-field class="login-full-width">
-        <mat-label><b>Enter Query : </b></mat-label>
+        <!-- <mat-label><b>Enter Query : </b></mat-label> -->
         <input matInput placeholder="Enter Search Parameter" [(ngModel)]="searchName" [value]="searchName"
           name="searchName" required>
       </mat-form-field>
     </div>
 
-    <h3>Filters : </h3>
-    <mat-radio-group (change)="selectOption($event)">
-      <mat-radio-button style="padding : 8px" value="name" checked>Name (First or Last)</mat-radio-button>
-      <mat-radio-button style="padding : 8px" value="firstName">First Name</mat-radio-button>
-      <mat-radio-button style="padding : 8px" value="lastName">Last Name</mat-radio-button>
-      <mat-radio-button style="padding : 8px" value="phoneNumber">Phone Number</mat-radio-button>
+    <!-- <mat-label><strong>Filters : </strong></mat-label> -->
+    <mat-label><strong>Filters : </strong></mat-label>
+    <mat-radio-group [(ngModel)]="radioSelected" (change)="selectOption($event)">
+      <mat-radio-button class="radioButton" style="padding : 8px" value="name" checked>Name (First or Last)</mat-radio-button>
+      <mat-radio-button class="radioButton" style="padding : 8px" value="firstName">First Name</mat-radio-button>
+      <mat-radio-button class="radioButton" style="padding : 8px" value="lastName">Last Name</mat-radio-button>
+      <mat-radio-button class="radioButton" style="padding : 8px" value="phoneNumber">Phone Number</mat-radio-button>
     </mat-radio-group>
+    <br>
     <button mat-raised-button (click)="searchDirectory()" color="primary" id="log">Search Directory</button>
 
     <h3>Results Appear Below : </h3>
@@ -44,42 +45,42 @@
   <mat-card-content *ngIf="loginType == 'addressBook'">
     <mat-card-title>Address Book API</mat-card-title>
     <mat-form-field class="login-full-width">
-      <mat-label><b>ID : </b></mat-label>
+      <!-- <mat-label><b>ID : </b></mat-label> -->
       <input matInput placeholder="Enter Unique ID" [(ngModel)]="contactId" [value]="contactId" name="contactId"
         required>
     </mat-form-field>
 
     <mat-form-field class="login-full-width">
-      <mat-label><b>Primary Contact : </b></mat-label>
+      <!-- <mat-label><b>Primary Contact : </b></mat-label> -->
       <input matInput placeholder="Enter Primary Contact" [(ngModel)]="primaryContact" [value]="primaryContact"
         name="primaryContact" required>
     </mat-form-field>
 
     <mat-form-field class="login-full-width">
-      <mat-label><b>First Name : </b></mat-label>
+      <!-- <mat-label><b>First Name : </b></mat-label> -->
       <input matInput placeholder="Enter First Name" [(ngModel)]="firstName" [value]="firstName" name="firstName"
         required>
     </mat-form-field>
 
     <mat-form-field class="login-full-width">
-      <mat-label><b>Last Name : </b></mat-label>
+      <!-- <mat-label><b>Last Name : </b></mat-label> -->
       <input matInput placeholder="Enter Last Name" [(ngModel)]="lastName" [value]="lastName" name="lastName" required>
     </mat-form-field>
 
     <mat-form-field class="login-full-width">
-      <mat-label><b>Home Phone : </b></mat-label>
+      <!-- <mat-label><b>Home Phone : </b></mat-label> -->
       <input matInput placeholder="Enter Home Phone" [(ngModel)]="homePhoneNumber" [value]="homePhoneNumber"
         name="homePhoneNumber" required>
     </mat-form-field>
 
     <mat-form-field class="login-full-width">
-      <mat-label><b>Business Phone : </b></mat-label>
+      <!-- <mat-label><b>Business Phone : </b></mat-label> -->
       <input matInput placeholder="Enter Business Phone" [(ngModel)]="businessPhone" [value]="businessPhone"
         name="businessPhone" required>
     </mat-form-field>
 
     <mat-form-field class="login-full-width">
-      <mat-label><b>Email : </b></mat-label>
+      <!-- <mat-label><b>Email : </b></mat-label> -->
       <input matInput placeholder="Enter Email" [(ngModel)]="email" [value]="email" name="email" required>
     </mat-form-field>
     <br>

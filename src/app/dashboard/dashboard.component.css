@@ -1,19 +1,5 @@
-mat-card {
-	margin-bottom: 10px;
+h1 {
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
 }
-mat-card mat-card-actions {
-	border-top: 1px solid whitesmoke;
-}
-mat-form-field.login-full-width {
-	width: 100%;
-}
-
-button {
-    display: inline-block;
-    margin-right: 8px;
-}
-
-/* mat-card-actions {
-	margin: 5px 2px 5px 2px;
-    display: inline-block;
-} */

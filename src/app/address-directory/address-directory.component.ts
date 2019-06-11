@@ -26,8 +26,9 @@ export class AddressDirectoryComponent implements OnInit {
   businessPhone: any;
   email: any;
   buddy: boolean;
+  radioSelected: string = 'name';
 
-  constructor(private ks: KandyService) { 
+  constructor(private ks: KandyService) {
     this.ks.client.on('directory:change', () => {
       this.log('Updating User List');
       this.updateUserList()
@@ -55,23 +56,9 @@ export class AddressDirectoryComponent implements OnInit {
     this.loginType = mrChange.value;
   }
 
-  // radio_select(membership: any) {
-  //   if (membership == 'Directory') {
-  //     this.value = false;
-  //   }
-  //   if (membership == 'Address Book') {
-  //     this.value = true;
-  //   }
-  // }
-
   selectOption(mrChange: MatRadioChange) {
-    // console.log('event fires --', event);
-    // console.log((<HTMLInputElement>event.target).nextElementSibling.innerText);
-    // console.log((event.srcElement as HTMLElement).nextElementSibling.innerText);
-    // console.log((event.target as HTMLElement).nextElementSibling.textContent);
-    // this.option = (event.target as HTMLElement).nextElementSibling.textContent;
-    this.option = mrChange.value;
-    console.log(this.option);
+    this.radioSelected = mrChange.value;
+    console.log(this.radioSelected);
   }
 
   userList(status: any) {
@@ -83,7 +70,7 @@ export class AddressDirectoryComponent implements OnInit {
   searchDirectory() {
     console.log(this.option + this.searchName)
     console.log(this.ks.client.user);
-    this.ks.client.user.search({ [this.option]: this.searchName });
+    this.ks.client.user.search({ [this.radioSelected]: this.searchName });
     this.log('User rendered successfully')
   }
 
@@ -102,7 +89,7 @@ export class AddressDirectoryComponent implements OnInit {
     this.selectedUser = this.currentUsers[0];
     console.log(this.selectedUser);
     console.log(this.selectedUser.length);
-    if (this.currentUsers.length === 2) {
+    if (this.currentUsers.length === 1) {
       this.renderUser(this.currentUsers)
     }
   }

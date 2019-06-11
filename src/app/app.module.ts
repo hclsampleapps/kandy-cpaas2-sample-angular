@@ -16,7 +16,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { KandyService } from './kandy.service';
 import { AddressDirectoryComponent } from './address-directory/address-directory.component';
-import { AuthGuard } from './auth.guard';
 
 @NgModule({
     declarations: [
@@ -41,7 +40,7 @@ import { AuthGuard } from './auth.guard';
         MatSelectModule,
         MatCheckboxModule
     ],
-    providers: [AuthGuard],
+    providers: [KandyService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

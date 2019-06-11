@@ -7,9 +7,10 @@
 
   <mat-card>
     <mat-card-title>Update your presence on Websocket Channel</mat-card-title>
-    <h4>Status</h4>
+    <!-- <h4>Status</h4> -->
     <div class="dropdown">
       <mat-form-field>
+        <mat-label>Status</mat-label>
         <mat-select placeholder="Select One" [(ngModel)]="selectedStatus" (selectionChange)="itemList(selectedStatus)">
           <mat-option *ngFor="let status of currentStatus" [value]="status">
             {{status}}
@@ -17,9 +18,10 @@
         </mat-select>
       </mat-form-field>
     </div>
-    <h4>Activity</h4>
+    <!-- <h4>Activity</h4> -->
     <div class="dropdown">
       <mat-form-field>
+        <mat-label>Activity</mat-label>
         <mat-select placeholder="Select One" [(ngModel)]="selectedActivity"
           (selectionChange)="itemActivity(selectedActivity)">
           <mat-option *ngFor="let activity of currentAct" [value]="activity">
@@ -28,7 +30,8 @@
         </mat-select>
       </mat-form-field>
     </div>
-    <h3>Note : </h3>
+    <br>
+    <!-- <h3>Note : </h3> -->
     <div class="update">
       <mat-form-field class="login-full-width">
         <input matInput placeholder="Enter Note" [(ngModel)]="note" [value]="note" name="note" required>
@@ -40,7 +43,7 @@
 
   <mat-card>
     <mat-card-title>Subscribe (watch) user</mat-card-title>
-    <h4>User ID : </h4>
+    <!-- <h4>User ID : </h4> -->
     <mat-form-field class="login-full-width">
       <input matInput placeholder="Enter User ID" [(ngModel)]="userId" [value]="userId" name="userId" required>
     </mat-form-field>
@@ -50,7 +53,7 @@
 
   <mat-card>
     <mat-card-title>Fetch and Get presence</mat-card-title>
-    <h4>User ID : </h4>
+    <!-- <h4>User ID : </h4> -->
     <mat-form-field class="login-full-width">
       <input matInput placeholder="Enter User ID" [(ngModel)]="getUserId" [value]="getUserId" name="getUserId" required>
     </mat-form-field>

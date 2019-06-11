@@ -79,6 +79,7 @@ export class LoginComponent implements OnInit {
                 const subscriptionType = 'websocket'
                 this.ks.client.services.subscribe(services, subscriptionType)
                 this._router.navigate(['/dashboard'])
+                // showMenu = this.ks.showNav;
             } else {
                 this.clientid = '';
                 this.user = '';
@@ -93,6 +94,7 @@ export class LoginComponent implements OnInit {
                 const subscriptionType = 'websocket'
                 this.ks.client.services.subscribe(services, subscriptionType)
                 this._router.navigate(['/dashboard'])
+                // showMenu = this.ks.showNav;
             } else {
                 this.privateKey = '';
                 this.privateSecret = '';

@@ -66,15 +66,14 @@ export class KandyService {
       console.log('Subscription Error: ' + params.error.message + ' (' + params.error.code + ')');
     })
 
-    // window.on = () => {
-    //   localStorage.removeItem('LoggedInUser');
-    //   localStorage.removeItem('PrivateKey');
-    //   localStorage.removeItem('PrivateSecret');
-    // }
   }
 
   setLoggedIn(value: boolean) {
     this.loggedInStatus = value;
+  }
+
+  get showNav() {
+    return true;
   }
 
   get isLoggedIn() {
