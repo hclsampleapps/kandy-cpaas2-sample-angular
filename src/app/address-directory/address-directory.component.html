@@ -1,5 +1,6 @@
 <div class="login-card">
   <mat-card>
+    <mat-card-title>DIRECTORY & ADDRESS-BOOK</mat-card-title>
     <mat-card-content>
       <mat-radio-group (change)="onChangeContactType($event)" [(ngModel)]="loginType">
         <mat-radio-button class="pad-rt" value="directory">Directory</mat-radio-button>
@@ -25,21 +26,20 @@
         <mat-radio-button class="radioButton" class="pad-rt" value="lastName">Last Name</mat-radio-button>
         <mat-radio-button class="radioButton" class="pad-rt" value="phoneNumber">Phone Number</mat-radio-button>
       </mat-radio-group>
-      <br>
-      <button mat-raised-button (click)="searchDirectory()" color="primary">Search Directory</button>
     </mat-card-content>
+    <button mat-raised-button (click)="searchDirectory()" color="primary">Search Directory</button>
   </mat-card>
 
   <mat-card *ngIf="loginType == 'directory'">
     <mat-card-title>Search Results</mat-card-title>
     <mat-card-content>
-      <div id="dropdown">
-        <mat-label id="label">Users: </mat-label>
+      <mat-form-field>
+        <mat-label id="label">Select User</mat-label>
         <mat-select id="statusDropdown" [(ngModel)]="selectedUser" (selectionChange)="userList(selectedUser)"
           placeholder="Select One">
           <mat-option *ngFor="let userInfo of currentUsers" [value]="userInfo">{{userInfo}}</mat-option>
         </mat-select>
-      </div>
+      </mat-form-field>
       <pre><code id="results"></code></pre>
     </mat-card-content>
   </mat-card>
@@ -107,11 +107,11 @@
     </mat-card-content>
   </mat-card>
 
-</div>
+  <mat-card>
+    <mat-card-title>Messages</mat-card-title>
+    <mat-card-content>
+      <div id="messageLogs">{{ message }}</div>
+    </mat-card-content>
+  </mat-card>
 
-<mat-card>
-  <mat-card-title>Messages</mat-card-title>
-  <mat-card-content>
-    <div id="messageLogs">{{ message }}</div>
-  </mat-card-content>
-</mat-card>
+</div>
