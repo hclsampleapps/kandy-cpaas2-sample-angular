@@ -1,110 +1,113 @@
-<mat-card class="login-card">
+<div class="login-card">
+  <mat-card>
+    <mat-card-content>
+      <mat-radio-group (change)="onChangeContactType($event)" [(ngModel)]="loginType">
+        <mat-radio-button style="padding : 8px" value="directory">Directory</mat-radio-button>
+        <mat-radio-button style="padding : 8px" value="addressBook">Address Book</mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
 
-  <mat-card-content>
-    <mat-radio-group (change)="onChangeContactType($event)" [(ngModel)]="loginType">
-      <mat-radio-button style="padding : 8px" value="directory">Directory</mat-radio-button>
-      <mat-radio-button style="padding : 8px" value="addressBook">Address Book</mat-radio-button>
-    </mat-radio-group>
-  </mat-card-content>
+  <mat-card *ngIf="loginType == 'directory'">
+    <mat-card-title>Directory API</mat-card-title>
+    <mat-card-content>
+      <div>
+        <mat-form-field class="login-full-width">
+          <input matInput placeholder="Search Parameter" [(ngModel)]="searchName" [value]="searchName"
+            name="searchName" required>
+        </mat-form-field>
+      </div>
 
-  <mat-card-content *ngIf="loginType == 'directory'">
-    <mat-card-title id="title">Directory API</mat-card-title>
-    <div id="dropdown">
-      <mat-label id="label">Users: </mat-label>
-      <mat-select id="statusDropdown" [(ngModel)]="selectedUser" (selectionChange)="userList(selectedUser)"
-        placeholder="Select One">
-        <mat-option *ngFor="let userInfo of currentUsers" [value]="userInfo">{{userInfo}}</mat-option>
-      </mat-select>
-    </div>
-    <br>
-    <div>
-      <mat-form-field class="login-full-width">
-        <!-- <mat-label><b>Enter Query : </b></mat-label> -->
-        <input matInput placeholder="Enter Search Parameter" [(ngModel)]="searchName" [value]="searchName"
-          name="searchName" required>
-      </mat-form-field>
-    </div>
+      <mat-label><h4>Set Filters</h4></mat-label>
+      <mat-radio-group [(ngModel)]="radioSelected" (change)="selectOption($event)">
+        <mat-radio-button class="radioButton" style="padding : 8px" value="name" checked>Name (First or Last)</mat-radio-button>
+        <mat-radio-button class="radioButton" style="padding : 8px" value="firstName">First Name</mat-radio-button>
+        <mat-radio-button class="radioButton" style="padding : 8px" value="lastName">Last Name</mat-radio-button>
+        <mat-radio-button class="radioButton" style="padding : 8px" value="phoneNumber">Phone Number</mat-radio-button>
+      </mat-radio-group>
+      <br>
+      <button mat-raised-button (click)="searchDirectory()" color="primary" id="log">Search Directory</button>
+    </mat-card-content>
+  </mat-card>
 
-    <!-- <mat-label><strong>Filters : </strong></mat-label> -->
-    <mat-label><strong>Filters : </strong></mat-label>
-    <mat-radio-group [(ngModel)]="radioSelected" (change)="selectOption($event)">
-      <mat-radio-button class="radioButton" style="padding : 8px" value="name" checked>Name (First or Last)</mat-radio-button>
-      <mat-radio-button class="radioButton" style="padding : 8px" value="firstName">First Name</mat-radio-button>
-      <mat-radio-button class="radioButton" style="padding : 8px" value="lastName">Last Name</mat-radio-button>
-      <mat-radio-button class="radioButton" style="padding : 8px" value="phoneNumber">Phone Number</mat-radio-button>
-    </mat-radio-group>
-    <br>
-    <button mat-raised-button (click)="searchDirectory()" color="primary" id="log">Search Directory</button>
+  <mat-card *ngIf="loginType == 'directory'">
+    <mat-card-title>Search Results</mat-card-title>
+    <mat-card-content>
+      <div id="dropdown">
+        <mat-label id="label">Users: </mat-label>
+        <mat-select id="statusDropdown" [(ngModel)]="selectedUser" (selectionChange)="userList(selectedUser)"
+          placeholder="Select One">
+          <mat-option *ngFor="let userInfo of currentUsers" [value]="userInfo">{{userInfo}}</mat-option>
+        </mat-select>
+      </div>
+      <pre><code id="results"></code></pre>
+    </mat-card-content>
+  </mat-card>
 
-    <h3>Results Appear Below : </h3>
-    <div id="results">
-
-    </div>
-  </mat-card-content>
-
-  <mat-card-content *ngIf="loginType == 'addressBook'">
+  <mat-card *ngIf="loginType == 'addressBook'">
     <mat-card-title>Address Book API</mat-card-title>
-    <mat-form-field class="login-full-width">
-      <!-- <mat-label><b>ID : </b></mat-label> -->
-      <input matInput placeholder="Enter Unique ID" [(ngModel)]="contactId" [value]="contactId" name="contactId"
-        required>
-    </mat-form-field>
+    <mat-card-content>
+      <mat-form-field class="login-full-width">
+        <input matInput placeholder="Unique ID" [(ngModel)]="contactId" [value]="contactId" name="contactId"
+          required>
+      </mat-form-field>
 
-    <mat-form-field class="login-full-width">
-      <!-- <mat-label><b>Primary Contact : </b></mat-label> -->
-      <input matInput placeholder="Enter Primary Contact" [(ngModel)]="primaryContact" [value]="primaryContact"
-        name="primaryContact" required>
-    </mat-form-field>
+      <mat-form-field class="login-full-width">
+        <input matInput placeholder="Primary Contact" [(ngModel)]="primaryContact" [value]="primaryContact"
+          name="primaryContact" required>
+      </mat-form-field>
 
-    <mat-form-field class="login-full-width">
-      <!-- <mat-label><b>First Name : </b></mat-label> -->
-      <input matInput placeholder="Enter First Name" [(ngModel)]="firstName" [value]="firstName" name="firstName"
-        required>
-    </mat-form-field>
+      <mat-form-field class="login-full-width">
+        <input matInput placeholder="First Name" [(ngModel)]="firstName" [value]="firstName" name="firstName"
+          required>
+      </mat-form-field>
 
-    <mat-form-field class="login-full-width">
-      <!-- <mat-label><b>Last Name : </b></mat-label> -->
-      <input matInput placeholder="Enter Last Name" [(ngModel)]="lastName" [value]="lastName" name="lastName" required>
-    </mat-form-field>
+      <mat-form-field class="login-full-width">
+        <input matInput placeholder="Last Name" [(ngModel)]="lastName" [value]="lastName" name="lastName" required>
+      </mat-form-field>
 
-    <mat-form-field class="login-full-width">
-      <!-- <mat-label><b>Home Phone : </b></mat-label> -->
-      <input matInput placeholder="Enter Home Phone" [(ngModel)]="homePhoneNumber" [value]="homePhoneNumber"
-        name="homePhoneNumber" required>
-    </mat-form-field>
+      <mat-form-field class="login-full-width">
+        <input matInput placeholder="Home Phone" [(ngModel)]="homePhoneNumber" [value]="homePhoneNumber"
+          name="homePhoneNumber" required>
+      </mat-form-field>
 
-    <mat-form-field class="login-full-width">
-      <!-- <mat-label><b>Business Phone : </b></mat-label> -->
-      <input matInput placeholder="Enter Business Phone" [(ngModel)]="businessPhone" [value]="businessPhone"
-        name="businessPhone" required>
-    </mat-form-field>
+      <mat-form-field class="login-full-width">
+        <input matInput placeholder="Business Phone" [(ngModel)]="businessPhone" [value]="businessPhone"
+          name="businessPhone" required>
+      </mat-form-field>
 
-    <mat-form-field class="login-full-width">
-      <!-- <mat-label><b>Email : </b></mat-label> -->
-      <input matInput placeholder="Enter Email" [(ngModel)]="email" [value]="email" name="email" required>
-    </mat-form-field>
-    <br>
-    <mat-checkbox [(ngModel)]="buddy" [value]="buddy" name="buddy" required> Buddy </mat-checkbox>
-    <br> <br>
-    <button mat-raised-button (click)="refreshContacts()" color="primary" id="log">Refresh Contacts</button>
-    <button mat-raised-button (click)="addContacts()" color="primary" id="log">Add Contacts</button>
-    <button mat-raised-button (click)="removeContacts()" color="primary" id="log">Remove Contacts</button>
-    <button mat-raised-button (click)="updateContacts()" color="primary" id="log">Update Contacts</button>
-    <button mat-raised-button (click)="clearContacts()" color="primary" id="log">Clear Contacts</button>
-    <br> <br>
-    <mat-label> <b> Contact List : </b> </mat-label>
-    <div id="contactList">
-      <table id="table">
-        <!-- <tr>
-            <th *ngFor="let col of columns">{{col}}</th>
-          </tr>
-          <tr>
-            <td *ngFor="let char of characters">{{char}}</td>
-          </tr> -->
-      </table>
-    </div>
-  </mat-card-content>
-</mat-card>
+      <mat-form-field class="login-full-width">
+        <input matInput placeholder="Email" [(ngModel)]="email" [value]="email" name="email" required>
+      </mat-form-field>
+      <br>
+      <mat-checkbox [(ngModel)]="buddy" [value]="buddy" name="buddy" required> Buddy </mat-checkbox>
+      <p>
+        <button mat-raised-button (click)="refreshContacts()" color="primary" id="log">Refresh Contacts</button>
+        <button mat-raised-button (click)="addContacts()" color="primary" id="log">Add Contacts</button>
+        <button mat-raised-button (click)="removeContacts()" color="primary" id="log">Remove Contacts</button>
+        <button mat-raised-button (click)="updateContacts()" color="primary" id="log">Update Contacts</button>
+        <button mat-raised-button (click)="clearContacts()" color="primary" id="log">Clear Contacts</button>
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card *ngIf="loginType == 'addressBook'">
+    <mat-card-title>Contact List</mat-card-title>
+    <mat-card-content>
+      <div id="contactList">
+        <table id="table">
+          <!-- <tr>
+              <th *ngFor="let col of columns">{{col}}</th>
+            </tr>
+            <tr>
+              <td *ngFor="let char of characters">{{char}}</td>
+            </tr> -->
+        </table>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</div>
 
 <mat-card>
   <mat-card-title>Messages</mat-card-title>
