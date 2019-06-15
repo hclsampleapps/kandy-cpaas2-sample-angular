@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { log } from 'util';
 import { MatRadioChange } from '@angular/material';
 import { KandyService } from 'app/kandy.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'tcc-login',
@@ -25,14 +26,27 @@ export class LoginComponent implements OnInit {
     data2: any;
     token1: any;
     token2: any;
+    qpMap: any;
 
-    constructor(private _router: Router, private _ngZone: NgZone, private ks: KandyService) {
+    constructor(private _router: Router, private _ngZone: NgZone, private ks: KandyService, private route: ActivatedRoute) {
         window['LoginComponent'] = { component: this, zone: _ngZone };
         console.log(this.ks)
     }
 
     ngOnInit() {
         this.log(this.message);
+        this.route.queryParamMap.subscribe(params => {
+            this.qpMap = {...params.keys, ...params};
+        });
+        console.log('Query Param Map:', this.qpMap);
+        this.serverurl = ('url' in this.qpMap.params) ? this.qpMap.params['url'] : this.serverurl;
+        this.loginType = ('mod' in this.qpMap.params) ? this.qpMap.params['mod'] : this.loginType;
+        this.clientid = ('cid' in this.qpMap.params) ? this.qpMap.params['cid'] : this.clientid;
+        this.user = ('usr' in this.qpMap.params) ? this.qpMap.params['usr'] : this.user;
+        this.pass = ('psw' in this.qpMap.params) ? this.qpMap.params['psw'] : this.pass;
+        this.contact = ('cnt' in this.qpMap.params) ? this.qpMap.params['cnt'] : this.contact;
+        this.privateKey = ('pvk' in this.qpMap.params) ? this.qpMap.params['pvk'] : this.privateKey;
+        this.privateSecret = ('pvs' in this.qpMap.params) ? this.qpMap.params['pvs'] : this.privateSecret;
     }
 
     onChangeLoginType(mrChange: MatRadioChange) {

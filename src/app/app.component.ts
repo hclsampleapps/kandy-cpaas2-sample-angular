@@ -33,12 +33,12 @@ export class AppComponent implements OnInit {
 			icon: 'contacts'
 		},
 		{
-			name: 'Directory & AddressBook',
+			name: 'Directory & Address-book',
 			link: 'addressDirectory',
 			icon: 'contact_phone'
 		},
 		{
-			name: 'Back to Dashboard Page',
+			name: 'Dashboard',
 			link: 'dashboard',
 			icon: 'dashboard'
 		}

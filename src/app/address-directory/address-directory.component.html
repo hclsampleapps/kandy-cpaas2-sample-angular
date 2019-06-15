@@ -2,8 +2,8 @@
   <mat-card>
     <mat-card-content>
       <mat-radio-group (change)="onChangeContactType($event)" [(ngModel)]="loginType">
-        <mat-radio-button style="padding : 8px" value="directory">Directory</mat-radio-button>
-        <mat-radio-button style="padding : 8px" value="addressBook">Address Book</mat-radio-button>
+        <mat-radio-button class="pad-rt" value="directory">Directory</mat-radio-button>
+        <mat-radio-button class="pad-rt" value="addressBook">Address Book</mat-radio-button>
       </mat-radio-group>
     </mat-card-content>
   </mat-card>
@@ -20,13 +20,13 @@
 
       <mat-label><h4>Set Filters</h4></mat-label>
       <mat-radio-group [(ngModel)]="radioSelected" (change)="selectOption($event)">
-        <mat-radio-button class="radioButton" style="padding : 8px" value="name" checked>Name (First or Last)</mat-radio-button>
-        <mat-radio-button class="radioButton" style="padding : 8px" value="firstName">First Name</mat-radio-button>
-        <mat-radio-button class="radioButton" style="padding : 8px" value="lastName">Last Name</mat-radio-button>
-        <mat-radio-button class="radioButton" style="padding : 8px" value="phoneNumber">Phone Number</mat-radio-button>
+        <mat-radio-button class="radioButton" class="pad-rt" value="name" checked>Name (First or Last)</mat-radio-button>
+        <mat-radio-button class="radioButton" class="pad-rt" value="firstName">First Name</mat-radio-button>
+        <mat-radio-button class="radioButton" class="pad-rt" value="lastName">Last Name</mat-radio-button>
+        <mat-radio-button class="radioButton" class="pad-rt" value="phoneNumber">Phone Number</mat-radio-button>
       </mat-radio-group>
       <br>
-      <button mat-raised-button (click)="searchDirectory()" color="primary" id="log">Search Directory</button>
+      <button mat-raised-button (click)="searchDirectory()" color="primary">Search Directory</button>
     </mat-card-content>
   </mat-card>
 
@@ -82,11 +82,11 @@
       <br>
       <mat-checkbox [(ngModel)]="buddy" [value]="buddy" name="buddy" required> Buddy </mat-checkbox>
       <p>
-        <button mat-raised-button (click)="refreshContacts()" color="primary" id="log">Refresh Contacts</button>
-        <button mat-raised-button (click)="addContacts()" color="primary" id="log">Add Contacts</button>
-        <button mat-raised-button (click)="removeContacts()" color="primary" id="log">Remove Contacts</button>
-        <button mat-raised-button (click)="updateContacts()" color="primary" id="log">Update Contacts</button>
-        <button mat-raised-button (click)="clearContacts()" color="primary" id="log">Clear Contacts</button>
+        <button mat-raised-button (click)="refreshContacts()" color="primary">Refresh Contacts</button>
+        <button mat-raised-button (click)="addContacts()" color="primary">Add Contacts</button>
+        <button mat-raised-button (click)="removeContacts()" color="primary">Remove Contacts</button>
+        <button mat-raised-button (click)="updateContacts()" color="primary">Update Contacts</button>
+        <button mat-raised-button (click)="clearContacts()" color="primary">Clear Contacts</button>
       </p>
     </mat-card-content>
   </mat-card>

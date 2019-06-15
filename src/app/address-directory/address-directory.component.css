@@ -44,7 +44,6 @@ mat-form-field.login-full-width {
 	width: 100%;
 }
 
-
 #message-logs {
     background: lightgrey;
     height: 200px;
@@ -78,4 +77,8 @@ button {
     display: flex;
     flex-wrap: wrap;
     flex-flow: row;
+}
+
+.pad-rt {
+    padding: 8px;
 }

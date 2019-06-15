@@ -1,33 +1,24 @@
 <mat-card class="login-card">
   <mat-card-title>Subscribe to Chat Services using Websocket channel</mat-card-title>
-  <button mat-raised-button (click)="subscribe()" color="primary" id="log">Subscribe</button>
+  <button mat-raised-button (click)="subscribe()" color="primary">Subscribe</button>
 </mat-card>
 <mat-card>
   <mat-card-title>Conversations</mat-card-title>
-  <h3>Enter their User Id in the given format : </h3>
-  <sub><i>example: janedoe@somedomain.com ([userId]@[domain])</i></sub>
   <mat-form-field class="login-full-width">
       <input matInput placeholder="Enter their User ID" [(ngModel)]="contactId" [value]="contactId" name="contactId" required>
+      <mat-hint>e.g., &lt;userId&gt;@&lt;domain&gt;</mat-hint>
   </mat-form-field>
-  <!-- <br> -->
-  <h3>Create Conversation</h3>
-  <button mat-raised-button (click)="conversation()" color="primary" id="log">Create</button>
+  <br>
+  <button mat-raised-button (click)="conversation()" color="primary">Create Conversation</button>
 </mat-card>
 
 <mat-card>
-  <mat-card-title>Chat History : </mat-card-title>
-  <div id="chatContent">
-    
-  </div>
-</mat-card>
-
-<mat-card>
-  <mat-card-title>Message to conversation : </mat-card-title>
+  <mat-card-title>Chat History</mat-card-title>
+  <div id="chatContent"></div>
   <mat-form-field class="login-full-width">
-      <input matInput placeholder="Enter your message" [(ngModel)]="chatMessage" [value]="chatMessage" name="chatMessage" required>
+      <input matInput placeholder="Type your message" [(ngModel)]="chatMessage" [value]="chatMessage" name="chatMessage" required>
   </mat-form-field>
-  <!-- <br> -->
-  <button mat-raised-button (click)="sendMessage()" color="primary" id="log">Send</button>
+  <button mat-raised-button (click)="sendMessage()" color="primary">Send</button>
 </mat-card>
 
 <mat-card class="log-card">

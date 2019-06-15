@@ -7,3 +7,6 @@ mat-card mat-card-actions {
 mat-form-field.login-full-width {
 	width: 100%;
 }
+.pad-rt {
+	padding: 8px;
+}
