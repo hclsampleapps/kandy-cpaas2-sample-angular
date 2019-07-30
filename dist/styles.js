@@ -598,8 +598,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\neha-ve\Desktop\GitHub\kandy-cpaas2-sample-angular\src\styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! C:\Users\neha-ve\Desktop\GitHub\kandy-cpaas2-sample-angular\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+__webpack_require__(/*! C:\Users\neha-ve\Documents\GitHub\kandy-cpaas2-sample-angular\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\neha-ve\Documents\GitHub\kandy-cpaas2-sample-angular\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
 
 
 /***/ })
