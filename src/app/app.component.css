@@ -20,3 +20,7 @@ mat-toolbar {
 		padding: 56px 0 0 0;
 	}
 }
+.btn-logout {
+	position: absolute; 
+	right: 10px;
+}

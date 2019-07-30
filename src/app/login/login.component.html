@@ -5,8 +5,8 @@
       <input matInput placeholder="Server URL" [(ngModel)]="serverurl" [value]="serverurl" name="serverurl" required>
     </mat-form-field>
     <mat-radio-group (change)="onChangeLoginType($event)" [(ngModel)]="loginType">
-      <mat-radio-button style="padding : 8px" value="passwordGrant">Password Grant</mat-radio-button>
-      <mat-radio-button style="padding : 8px" value="clientCredentials">Client Credentials</mat-radio-button>
+      <mat-radio-button class="pad-rt" value="passwordGrant">Password Grant</mat-radio-button>
+      <mat-radio-button class="pad-rt" value="clientCredentials">Client Credentials</mat-radio-button>
     </mat-radio-group>
   </mat-card-content>
   <mat-card-content *ngIf="loginType == 'passwordGrant'">
