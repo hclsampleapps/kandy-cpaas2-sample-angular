@@ -27,7 +27,7 @@ export class CallComponent implements OnInit {
     @ViewChildren(MatListItem, { read: ElementRef }) matListItems: QueryList<MatListItem>;
 
 
-    constructor(private router: Router, private ks: KandyService) {
+    constructor(private router: Router, public ks: KandyService) {
     }
 
 
@@ -43,11 +43,13 @@ export class CallComponent implements OnInit {
         // Set listener for changes in a call's state.
         this.ks.client.on('call:stateChange', (params) => {
             const call = this.ks.client.call.getById(params.callId)
-            if (call != 'ENundefinedDED')
-                this.log('call:stateChange', call, call.state)
+            this.log('Call state changed to: ' + call.state)
+            this.renderMedia(params.callId);
+            // if (call != 'ENDED')
+            //     this.log('call:stateChange', call, call.state)
 
             // If the call ended, stop tracking the callId.
-            if (call.state === 'ENundefinedDED') {
+            if (call.state === 'ENDED') {
                 callIdValue = null
             }
         })
@@ -71,6 +73,14 @@ export class CallComponent implements OnInit {
         this.ks.client.on('call:accepted', params => {
             this.renderMedia(params.callId)
         })
+    }
+
+    renderMedia(callIdValue) {
+        const call = this.ks.client.call.getById(callIdValue);
+        console.log('call : ', call.localTracks)
+        this.log('Render Media', call);
+        this.ks.client.media.renderTracks(call.localTracks, '#local-container');
+        this.ks.client.media.renderTracks(call.remoteTracks, '#remote-container')
     }
 
     log(...args) {
@@ -102,6 +112,9 @@ export class CallComponent implements OnInit {
             video: true
         }
         callIdValue = this.ks.client.call.make(this.number, mediaConstraints);
+        console.log('callIdValue is : ', callIdValue)
+        console.log(document.getElementById('local-container'));
+        console.log(document.getElementById('remote-container'));
     }
 
     answerAudioCall(event: any) {
@@ -136,12 +149,7 @@ export class CallComponent implements OnInit {
         this.ks.client.call.end(callIdValue)
     }
 
-    renderMedia(params: any) {
-        const call = this.ks.client.call.getById(params);
-        this.log('Render Media', call);
-        this.ks.client.media.renderTracks(call.localTracks, '#local-container');
-        this.ks.client.media.renderTracks(call.remoteTracks, '#remote-container')
-    }
+
 
 }
 
