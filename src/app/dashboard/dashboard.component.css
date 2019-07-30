@@ -1,0 +1,10 @@
+h1 {
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+.inparaico {
+	font-size: 14px;
+    padding: 0 5px 0 5px;
+    width: 10px;
+}

@@ -1,0 +1,22 @@
+mat-card {
+	margin-bottom: 10px;
+}
+mat-card mat-card-actions {
+	border-top: 1px solid whitesmoke;
+}
+mat-form-field.login-full-width {
+	width: 100%;
+}
+
+#chatContent {
+    background: lightgrey;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+}
+
+.pad-vt {
+	padding-top: 10px;
+}

@@ -1,0 +1,81 @@
+<div id="scollable" class="login-card">
+  <mat-card>
+    <mat-card-title>PRESENCE</mat-card-title>
+    <mat-card-content>Subscribe to Presence Services using Websocket channel</mat-card-content>
+    <button mat-raised-button (click)="subscribe()" color="primary" id="log">Subscribe</button>
+    <button mat-raised-button (click)="populateDropdown()" color="primary" id="log">Populate Dropdown</button>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Update your presence on Websocket Channel</mat-card-title>
+    <!-- <h4>Status</h4> -->
+    <div class="dropdown">
+      <mat-form-field>
+        <mat-label>Status</mat-label>
+        <mat-select placeholder="Select One" [(ngModel)]="selectedStatus" (selectionChange)="itemList(selectedStatus)">
+          <mat-option *ngFor="let status of currentStatus" [value]="status">
+            {{status}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <!-- <h4>Activity</h4> -->
+    <div class="dropdown">
+      <mat-form-field>
+        <mat-label>Activity</mat-label>
+        <mat-select placeholder="Select One" [(ngModel)]="selectedActivity"
+          (selectionChange)="itemActivity(selectedActivity)">
+          <mat-option *ngFor="let activity of currentAct" [value]="activity">
+            {{activity}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <br>
+    <!-- <h3>Note : </h3> -->
+    <div class="update">
+      <mat-form-field class="login-full-width">
+        <input matInput placeholder="Enter Note" [(ngModel)]="note" [value]="note" name="note" required>
+      </mat-form-field>
+      <button mat-raised-button (click)="updatePresence()" color="primary" id="log">Update</button>
+    </div>
+
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Subscribe (watch) user</mat-card-title>
+    <!-- <h4>User ID : </h4> -->
+    <mat-form-field class="login-full-width">
+      <input matInput placeholder="Enter User ID" [(ngModel)]="userId" [value]="userId" name="userId" required>
+    </mat-form-field>
+    <button mat-raised-button (click)="subscribeUser()" color="primary" id="log">Subscribe</button>
+    <button mat-raised-button (click)="unsubscribeUser()" color="primary" id="log">Unsubscribe</button>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Fetch and Get presence</mat-card-title>
+    <!-- <h4>User ID : </h4> -->
+    <mat-form-field class="login-full-width">
+      <input matInput placeholder="Enter User ID" [(ngModel)]="getUserId" [value]="getUserId" name="getUserId" required>
+    </mat-form-field>
+    <button mat-raised-button (click)="fetchUser()" color="primary" id="log">Fetch</button>
+    <button mat-raised-button (click)="getUser()" color="primary" id="log">Get</button>
+    <button mat-raised-button (click)="clearActivity()" color="primary" id="log">Clear Activities</button>
+  </mat-card>
+
+  <mat-card class="log-card">
+    <mat-card-title>Presence Activity</mat-card-title>
+    <mat-card-content>
+      <div id="presenceActivity">
+
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="log-card">
+    <mat-card-title>Messages</mat-card-title>
+    <mat-card-content>
+      <div id="messageLogs">{{ message }}</div>
+    </mat-card-content>
+  </mat-card>
+</div>

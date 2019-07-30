@@ -1,41 +1,48 @@
-<mat-card class="call-card">
-  <mat-card-title>Make a Call</mat-card-title>
-  <mat-card-content>
-    <mat-form-field>
-      <mat-label>Enter the SIP Id</mat-label>
-      <input matInput type="text" name="number" id="number" [(ngModel)]="number" placeholder="sip:janedoe@somedomain.com" required>
-      <mat-hint>e.g., sip:&lt;userId&gt;@&lt;domain&gt;</mat-hint>
-    </mat-form-field>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button (click)="makeAudioCall($event)" color="primary">Make Audio Call</button>
-    <button mat-raised-button (click)="makeVideoCall($event)" color="primary">Make Video Call</button>
-    <button mat-raised-button (click)="answerAudioCall($event)" color="primary">Answer Audio Call</button> 
-    <button mat-raised-button (click)="answerVideoCall($event)" color="primary">Answer Video Call</button> 
-    <button mat-raised-button (click)="rejectCall()" color="primary">Reject Call</button>
-    <button mat-raised-button (click)="endCall()" color="primary">End Call</button>
-  </mat-card-actions>
-</mat-card>
+<div class="login-card">
+  <mat-card>
+    <mat-card-title>CALL</mat-card-title>
+    <mat-card-content>Subscribe to Call Services using Websocket channel</mat-card-content>
+    <button mat-raised-button (click)="subscribe()" color="primary">Subscribe</button>
+  </mat-card>
 
-<mat-card class="video-card gap-rt">
-  <mat-card-title>Local Video</mat-card-title>
-  <mat-card-content>
-    <div id="local-container"></div>
-  </mat-card-content>
-</mat-card>
+  <mat-card class="call-card">
+    <mat-card-title>Make a Call</mat-card-title>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput type="text" name="number" id="number" [(ngModel)]="number" placeholder="Enter the SIP Id" required>
+        <mat-hint>e.g., sip:&lt;userId&gt;@&lt;domain&gt;</mat-hint>
+      </mat-form-field>
+    </mat-card-content>
+    <!-- <mat-card-actions> -->
+      <button mat-raised-button (click)="makeAudioCall($event)" color="primary">Make Audio Call</button>
+      <button mat-raised-button (click)="makeVideoCall($event)" color="primary">Make Video Call</button>
+      <button mat-raised-button (click)="answerAudioCall($event)" color="primary">Answer Audio Call</button> 
+      <button mat-raised-button (click)="answerVideoCall($event)" color="primary">Answer Video Call</button> 
+      <button mat-raised-button (click)="rejectCall()" color="primary">Reject Call</button>
+      <button mat-raised-button (click)="endCall()" color="primary">End Call</button>
+    <!-- </mat-card-actions> -->
+  </mat-card>
 
-<mat-card class="video-card">
-  <mat-card-title>Remote Video</mat-card-title>
-  <mat-card-content>
-    <div id="remote-container"></div>
-  </mat-card-content>
-</mat-card>
+  <mat-card class="video-card gap-rt">
+    <mat-card-title>Local Video</mat-card-title>
+    <mat-card-content>
+      <div id="local-container"></div>
+    </mat-card-content>
+  </mat-card>
 
-<mat-card class="example-card">
-  <mat-card-title>Messages</mat-card-title>
-  <mat-card-content>
-    <div id="messages">
-    {{ message }}
-  </div>
-  </mat-card-content>
-</mat-card>
+  <mat-card class="video-card">
+    <mat-card-title>Remote Video</mat-card-title>
+    <mat-card-content>
+      <div id="remote-container"></div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Messages</mat-card-title>
+    <mat-card-content>
+      <div id="messages">
+      {{ message }}
+    </div>
+    </mat-card-content>
+  </mat-card>
+</div>

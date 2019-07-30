@@ -1,0 +1,42 @@
+<div class="login-card">
+
+  <mat-card>
+    <mat-card-title>SMS</mat-card-title>
+    <mat-card-content>Subscribe to SMS Services using Websocket channel</mat-card-content>
+    <button mat-raised-button (click)="subscribe()" color="primary">Subscribe</button>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Conversations</mat-card-title>
+    <mat-card-content>
+      <mat-form-field class="login-full-width">
+          <input matInput placeholder="Enter their phone number" [(ngModel)]="number" [value]="number" name="number" required>
+          <mat-hint>e.g., in E164 format</mat-hint>
+      </mat-form-field>
+    </mat-card-content>
+    <button mat-raised-button (click)="conversation()" color="primary">Create Conversation</button>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>SMS History</mat-card-title>
+    <div id="smsContent"></div>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Message to conversation</mat-card-title>
+    <mat-card-content>
+      <mat-form-field class="login-full-width">
+        <input matInput placeholder="Enter your message" [(ngModel)]="textMessage" [value]="textMessage" name="textMessage" required>
+      </mat-form-field>
+    </mat-card-content>
+    <button mat-raised-button (click)="sendMessage()" color="primary">Send</button>
+  </mat-card>
+
+  <mat-card class="log-card">
+    <mat-card-title>Messages</mat-card-title>
+    <mat-card-content>
+      <div id="messageLogs">{{ message }}</div>
+    </mat-card-content>
+  </mat-card>
+
+</div>

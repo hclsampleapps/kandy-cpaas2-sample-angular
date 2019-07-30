@@ -1,0 +1,36 @@
+<div class="login-card">
+
+  <mat-card>
+    <mat-card-title>CHAT</mat-card-title>
+    <mat-card-content>Subscribe to Chat Services using Websocket channel</mat-card-content>
+    <button mat-raised-button (click)="subscribe()" color="primary">Subscribe</button>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Conversations</mat-card-title>
+    <mat-card-content>
+      <mat-form-field class="login-full-width">
+          <input matInput placeholder="Enter their User ID" [(ngModel)]="contactId" [value]="contactId" name="contactId" required>
+          <mat-hint>e.g., &lt;userId&gt;@&lt;domain&gt;</mat-hint>
+      </mat-form-field>
+    </mat-card-content>
+    <button mat-raised-button (click)="conversation()" color="primary">Create Conversation</button>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Chat History</mat-card-title>
+    <div id="chatContent"></div>
+    <mat-form-field class="login-full-width">
+        <input matInput placeholder="Type your message" [(ngModel)]="chatMessage" [value]="chatMessage" name="chatMessage" required>
+    </mat-form-field>
+    <button mat-raised-button (click)="sendMessage()" color="primary">Send</button>
+  </mat-card>
+
+  <mat-card class="log-card">
+    <mat-card-title>Messages</mat-card-title>
+    <mat-card-content>
+      <div id="messageLogs">{{ message }}</div>
+    </mat-card-content>
+  </mat-card>
+
+</div>

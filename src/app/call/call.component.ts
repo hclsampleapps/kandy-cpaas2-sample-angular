@@ -4,8 +4,9 @@ import {
 } from '@angular/core';
 import { MatDialog, MatDialogRef, MatList, MatListItem, MatToolbar } from '@angular/material';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { KandyService } from 'app/kandy.service';
 
-declare var kandy: any;
+// declare var kandy: any;
 var callIdValue: any;
 
 @Component({
@@ -26,54 +27,53 @@ export class CallComponent implements OnInit {
     @ViewChildren(MatListItem, { read: ElementRef }) matListItems: QueryList<MatListItem>;
 
 
-    constructor(private router: Router) {
-        CallComponent.log('UsersComponent constructor');
+    constructor(private router: Router, private ks: KandyService) {
     }
 
 
     ngOnInit(): void {
 
-        CallComponent.log('ngOnInit', this.message);
+        this.log('ngOnInit', this.message);
         // Using timeout due to https://github.com/angular/angular/issues/14748
 
-        kandy.on('call:error', function(params) {
-            CallComponent.log('call:error', params.error.message)
+        this.ks.client.on('call:error', (params) =>  {
+            this.log('call:error', params.error.message)
         })
 
         // Set listener for changes in a call's state.
-        kandy.on('call:stateChange', function(params) {
-            const call = kandy.call.getById(params.callId)
+        this.ks.client.on('call:stateChange', (params) => {
+            const call = this.ks.client.call.getById(params.callId)
             if (call != 'ENundefinedDED')
-                CallComponent.log('call:stateChange', call, call.state)
+                this.log('call:stateChange', call, call.state)
 
             // If the call ended, stop tracking the callId.
             if (call.state === 'ENundefinedDED') {
-                this.callIdValue = null
+                callIdValue = null
             }
         })
 
         // Set listener for incoming calls.
-        kandy.on('call:receive', function(params) {
+        this.ks.client.on('call:receive', (params) => {
             // Keep track of the callId.
 
             // Retrieve call information.
             if (params) {
                 callIdValue = params.callId;
             }
-            kandy.call.getById(params.callId)
-            CallComponent.log('call receive')
+            this.ks.client.call.getById(params.callId)
+            this.log('call receive')
         })
 
-        kandy.on('call:answered', params => {
+        this.ks.client.on('call:answered', params => {
             this.renderMedia(params.callId)
         })
 
-        kandy.on('call:accepted', params => {
+        this.ks.client.on('call:accepted', params => {
             this.renderMedia(params.callId)
         })
     }
 
-    static log(...args) {
+    log(...args) {
         let message: string = '&#10095; ';
         for (let i = 0; i < args.length; i++) {
             if (!!args[i] && typeof args[i] == 'object') {
@@ -87,60 +87,60 @@ export class CallComponent implements OnInit {
     }
 
     makeAudioCall(event: any) {
-        CallComponent.log('Make Audio Call', event, this.number);
+        this.log('Make Audio Call', event, this.number);
         const mediaConstraints = {
             audio: true,
             video: false
         }
-        callIdValue = kandy.call.make(this.number, mediaConstraints);
+        callIdValue = this.ks.client.call.make(this.number, mediaConstraints);
     }
 
     makeVideoCall(event: any) {
-        CallComponent.log('Make Video Call', event, this.number);
+        this.log('Make Video Call', event, this.number);
         const mediaConstraints = {
             audio: true,
             video: true
         }
-        callIdValue = kandy.call.make(this.number, mediaConstraints);
+        callIdValue = this.ks.client.call.make(this.number, mediaConstraints);
     }
 
     answerAudioCall(event: any) {
-        CallComponent.log('Answer Audio Call');
-        const call = kandy.call.getById(callIdValue);
+        this.log('Answer Audio Call');
+        const call = this.ks.client.call.getById(callIdValue);
         const mediaConstraints = {
             audio: true,
             video: false
         }
-        kandy.call.answer(callIdValue, mediaConstraints);
+        this.ks.client.call.answer(callIdValue, mediaConstraints);
     }
 
     answerVideoCall(event: any) {
-        CallComponent.log('Answer Video Call');
-        const call = kandy.call.getById(callIdValue);
+        this.log('Answer Video Call');
+        const call = this.ks.client.call.getById(callIdValue);
         const mediaConstraints = {
             audio: true,
             video: true
         }
-        kandy.call.answer(callIdValue, mediaConstraints);
+        this.ks.client.call.answer(callIdValue, mediaConstraints);
     }
 
     rejectCall() {
-        CallComponent.log('Reject Call');
-        var call = kandy.call.getById(callIdValue);
-        kandy.call.reject(callIdValue)
+        this.log('Reject Call');
+        var call = this.ks.client.call.getById(callIdValue);
+        this.ks.client.call.reject(callIdValue)
     }
 
     endCall() {
-        CallComponent.log('End Call')
-        var call = kandy.call.getById(callIdValue)
-        kandy.call.end(callIdValue)
+        this.log('End Call')
+        var call = this.ks.client.call.getById(callIdValue)
+        this.ks.client.call.end(callIdValue)
     }
 
     renderMedia(params: any) {
-        const call = kandy.call.getById(params);
-        CallComponent.log('Render Media', call);
-        kandy.media.renderTracks(call.localTracks, '#local-container');
-        kandy.media.renderTracks(call.remoteTracks, '#remote-container')
+        const call = this.ks.client.call.getById(params);
+        this.log('Render Media', call);
+        this.ks.client.media.renderTracks(call.localTracks, '#local-container');
+        this.ks.client.media.renderTracks(call.remoteTracks, '#remote-container')
     }
 
 }
