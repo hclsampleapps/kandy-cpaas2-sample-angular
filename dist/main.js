@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkZHJlc3MtZGlyZWN0b3J5L2FkZHJlc3MtZGlyZWN0b3J5LmNvbXBvbmVudC5jc3MifQ== */"
+module.exports = "#dropdown  {\n    padding: 10px;\n    float: right;\n    display: inline-flex;\n    flex-direction: row;\n}\n\n#label {\n    display: inline-flex;\n    flex-direction: row;\n    padding: 4px;\n}\n\n#statusDropdown {\n    padding: 4px;\n    width: 150px;\n}\n\n#title {\n    display: inline-flex;\n    float: left;\n    padding: 10px;\n}\n\n#list {\n    display: flex;\n    flex-direction: column;\n    color: black;\n}\n\n#radio {\n    display: inline-flex;\n    vertical-align: middle;\n    margin-left: 10px;\n}\n\nmat-card {\n\tmargin-bottom: 10px;\n}\n\nmat-card mat-card-actions {\n\tborder-top: 1px solid whitesmoke;\n}\n\nmat-form-field.login-full-width {\n\twidth: 100%;\n}\n\n#message-logs {\n    background: lightgrey;\n    height: 200px;\n    overflow-y: scroll;\n    scroll-behavior: smooth;\n    padding: 10px 10px;\n    margin-bottom: 5px;\n}\n\ntable, td, th {  \n    border: 2px solid #ddd;\n    text-align: left;\n}\n\ntable {\n    border-collapse: collapse;\n    width: 50%;\n}\n\nth, td {\n    padding: 10px;\n}\n\nbutton {\n    display: inline-block;\n    margin-right: 8px;\n    margin-bottom: 8px;\n}\n\n.radioButton {\n    display: flex;\n    flex-wrap: wrap;\n    flex-flow: row;\n}\n\n.pad-rt {\n    padding: 8px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRkcmVzcy1kaXJlY3RvcnkvYWRkcmVzcy1kaXJlY3RvcnkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYixZQUFZO0lBQ1osb0JBQW9CO0lBQ3BCLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLG9CQUFvQjtJQUNwQixtQkFBbUI7SUFDbkIsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFlBQVk7SUFDWixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksb0JBQW9CO0lBQ3BCLFdBQVc7SUFDWCxhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksb0JBQW9CO0lBQ3BCLHNCQUFzQjtJQUN0QixpQkFBaUI7QUFDckI7O0FBRUE7Q0FDQyxtQkFBbUI7QUFDcEI7O0FBQ0E7Q0FDQyxnQ0FBZ0M7QUFDakM7O0FBQ0E7Q0FDQyxXQUFXO0FBQ1o7O0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsYUFBYTtJQUNiLGtCQUFrQjtJQUNsQix1QkFBdUI7SUFDdkIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLHNCQUFzQjtJQUN0QixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSx5QkFBeUI7SUFDekIsVUFBVTtBQUNkOztBQUVBO0lBQ0ksYUFBYTtBQUNqQjs7QUFFQTtJQUNJLHFCQUFxQjtJQUNyQixpQkFBaUI7SUFDakIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLGVBQWU7SUFDZixjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksWUFBWTtBQUNoQiIsImZpbGUiOiJzcmMvYXBwL2FkZHJlc3MtZGlyZWN0b3J5L2FkZHJlc3MtZGlyZWN0b3J5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjZHJvcGRvd24gIHtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGZsb2F0OiByaWdodDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xufVxuXG4jbGFiZWwge1xuICAgIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgcGFkZGluZzogNHB4O1xufVxuXG4jc3RhdHVzRHJvcGRvd24ge1xuICAgIHBhZGRpbmc6IDRweDtcbiAgICB3aWR0aDogMTUwcHg7XG59XG5cbiN0aXRsZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWZsZXg7XG4gICAgZmxvYXQ6IGxlZnQ7XG4gICAgcGFkZGluZzogMTBweDtcbn1cblxuI2xpc3Qge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBjb2xvcjogYmxhY2s7XG59XG5cbiNyYWRpbyB7XG4gICAgZGlzcGxheTogaW5saW5lLWZsZXg7XG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgICBtYXJnaW4tbGVmdDogMTBweDtcbn1cblxubWF0LWNhcmQge1xuXHRtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxubWF0LWNhcmQgbWF0LWNhcmQtYWN0aW9ucyB7XG5cdGJvcmRlci10b3A6IDFweCBzb2xpZCB3aGl0ZXNtb2tlO1xufVxubWF0LWZvcm0tZmllbGQubG9naW4tZnVsbC13aWR0aCB7XG5cdHdpZHRoOiAxMDAlO1xufVxuXG4jbWVzc2FnZS1sb2dzIHtcbiAgICBiYWNrZ3JvdW5kOiBsaWdodGdyZXk7XG4gICAgaGVpZ2h0OiAyMDBweDtcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gICAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gICAgcGFkZGluZzogMTBweCAxMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDVweDtcbn1cblxudGFibGUsIHRkLCB0aCB7ICBcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjZGRkO1xuICAgIHRleHQtYWxpZ246IGxlZnQ7XG59XG4gIFxudGFibGUge1xuICAgIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7XG4gICAgd2lkdGg6IDUwJTtcbn1cbiAgXG50aCwgdGQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG59XG5cbmJ1dHRvbiB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIG1hcmdpbi1yaWdodDogOHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDhweDtcbn1cblxuLnJhZGlvQnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICBmbGV4LWZsb3c6IHJvdztcbn1cblxuLnBhZC1ydCB7XG4gICAgcGFkZGluZzogOHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  address-directory works!\n</p>\n"
+module.exports = "<div class=\"login-card\">\n  <mat-card>\n    <mat-card-title>DIRECTORY & ADDRESS-BOOK</mat-card-title>\n    <mat-card-content>\n      <mat-radio-group (change)=\"onChangeContactType($event)\" [(ngModel)]=\"loginType\">\n        <mat-radio-button class=\"pad-rt\" value=\"directory\">Directory</mat-radio-button>\n        <mat-radio-button class=\"pad-rt\" value=\"addressBook\">Address Book</mat-radio-button>\n      </mat-radio-group>\n    </mat-card-content>\n  </mat-card>\n\n  <mat-card *ngIf=\"loginType == 'directory'\">\n    <mat-card-title>Directory API</mat-card-title>\n    <mat-card-content>\n      <div>\n        <mat-form-field class=\"login-full-width\">\n          <input matInput placeholder=\"Search Parameter\" [(ngModel)]=\"searchName\" [value]=\"searchName\"\n            name=\"searchName\" required>\n        </mat-form-field>\n      </div>\n\n      <mat-label><h4>Set Filters</h4></mat-label>\n      <mat-radio-group [(ngModel)]=\"radioSelected\" (change)=\"selectOption($event)\">\n        <mat-radio-button class=\"radioButton\" class=\"pad-rt\" value=\"name\" checked>Name (First or Last)</mat-radio-button>\n        <mat-radio-button class=\"radioButton\" class=\"pad-rt\" value=\"firstName\">First Name</mat-radio-button>\n        <mat-radio-button class=\"radioButton\" class=\"pad-rt\" value=\"lastName\">Last Name</mat-radio-button>\n        <mat-radio-button class=\"radioButton\" class=\"pad-rt\" value=\"phoneNumber\">Phone Number</mat-radio-button>\n      </mat-radio-group>\n    </mat-card-content>\n    <button mat-raised-button (click)=\"searchDirectory()\" color=\"primary\">Search Directory</button>\n  </mat-card>\n\n  <mat-card *ngIf=\"loginType == 'directory'\">\n    <mat-card-title>Search Results</mat-card-title>\n    <mat-card-content>\n      <mat-form-field>\n        <mat-label id=\"label\">Select User</mat-label>\n        <mat-select id=\"statusDropdown\" [(ngModel)]=\"selectedUser\" (selectionChange)=\"userList(selectedUser)\"\n          placeholder=\"Select One\">\n          <mat-option *ngFor=\"let userInfo of currentUsers\" [value]=\"userInfo\">{{userInfo}}</mat-option>\n        </mat-select>\n      </mat-form-field>\n      <pre><code id=\"results\"></code></pre>\n    </mat-card-content>\n  </mat-card>\n\n  <mat-card *ngIf=\"loginType == 'addressBook'\">\n    <mat-card-title>Address Book API</mat-card-title>\n    <mat-card-content>\n      <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"Unique ID\" [(ngModel)]=\"contactId\" [value]=\"contactId\" name=\"contactId\"\n          required>\n      </mat-form-field>\n\n      <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"Primary Contact\" [(ngModel)]=\"primaryContact\" [value]=\"primaryContact\"\n          name=\"primaryContact\" required>\n      </mat-form-field>\n\n      <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"First Name\" [(ngModel)]=\"firstName\" [value]=\"firstName\" name=\"firstName\"\n          required>\n      </mat-form-field>\n\n      <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"Last Name\" [(ngModel)]=\"lastName\" [value]=\"lastName\" name=\"lastName\" required>\n      </mat-form-field>\n\n      <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"Home Phone\" [(ngModel)]=\"homePhoneNumber\" [value]=\"homePhoneNumber\"\n          name=\"homePhoneNumber\" required>\n      </mat-form-field>\n\n      <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"Business Phone\" [(ngModel)]=\"businessPhone\" [value]=\"businessPhone\"\n          name=\"businessPhone\" required>\n      </mat-form-field>\n\n      <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"Email\" [(ngModel)]=\"email\" [value]=\"email\" name=\"email\" required>\n      </mat-form-field>\n      <br>\n      <mat-checkbox [(ngModel)]=\"buddy\" [value]=\"buddy\" name=\"buddy\" required> Buddy </mat-checkbox>\n      <p>\n        <button mat-raised-button (click)=\"refreshContacts()\" color=\"primary\">Refresh Contacts</button>\n        <button mat-raised-button (click)=\"addContacts()\" color=\"primary\">Add Contacts</button>\n        <button mat-raised-button (click)=\"removeContacts()\" color=\"primary\">Remove Contacts</button>\n        <button mat-raised-button (click)=\"updateContacts()\" color=\"primary\">Update Contacts</button>\n        <button mat-raised-button (click)=\"clearContacts()\" color=\"primary\">Clear Contacts</button>\n      </p>\n    </mat-card-content>\n  </mat-card>\n\n  <mat-card *ngIf=\"loginType == 'addressBook'\">\n    <mat-card-title>Contact List</mat-card-title>\n    <mat-card-content>\n      <div id=\"contactList\">\n        <table id=\"table\">\n          <!-- <tr>\n              <th *ngFor=\"let col of columns\">{{col}}</th>\n            </tr>\n            <tr>\n              <td *ngFor=\"let char of characters\">{{char}}</td>\n            </tr> -->\n        </table>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Messages</mat-card-title>\n    <mat-card-content>\n      <div id=\"messageLogs\">{{ message }}</div>\n    </mat-card-content>\n  </mat-card>\n\n</div>"
 
 /***/ }),
 
@@ -56,6 +56,7 @@ module.exports = "<p>\n  address-directory works!\n</p>\n"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddressDirectoryComponent", function() { return AddressDirectoryComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var app_kandy_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! app/kandy.service */ "./src/app/kandy.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -66,10 +67,172 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var AddressDirectoryComponent = /** @class */ (function () {
-    function AddressDirectoryComponent() {
+    function AddressDirectoryComponent(ks) {
+        var _this = this;
+        this.ks = ks;
+        this.loginType = 'directory';
+        this.currentUsers = [];
+        this.radioSelected = 'name';
+        this.ks.client.on('directory:change', function () {
+            _this.log('Updating User List');
+            _this.updateUserList();
+        });
+        this.ks.client.on('directory:error', function (error) {
+            _this.log('An error occured: ' + JSON.stringify(error));
+        });
+        this.ks.client.on('contacts:change', function () {
+            _this.log('Updating contacts table');
+            _this.updateContactsTable();
+        });
+        this.ks.client.on('contacts:new', function (contact) {
+            _this.log('Updating contacts table');
+            _this.updateContactsTable();
+        });
     }
     AddressDirectoryComponent.prototype.ngOnInit = function () {
+    };
+    AddressDirectoryComponent.prototype.onChangeContactType = function (mrChange) {
+        this.loginType = mrChange.value;
+    };
+    AddressDirectoryComponent.prototype.selectOption = function (mrChange) {
+        this.radioSelected = mrChange.value;
+        console.log(this.radioSelected);
+    };
+    AddressDirectoryComponent.prototype.userList = function (status) {
+        console.log('event is --- ', event);
+        this.status = this.selectedUser;
+        console.log('selected status is ', status);
+    };
+    AddressDirectoryComponent.prototype.searchDirectory = function () {
+        console.log(this.option + this.searchName);
+        console.log(this.ks.client.user);
+        this.ks.client.user.search((_a = {}, _a[this.radioSelected] = this.searchName, _a));
+        this.log('User rendered successfully');
+        var _a;
+    };
+    AddressDirectoryComponent.prototype.getSelectedUser = function () {
+        return this.currentUsers;
+    };
+    AddressDirectoryComponent.prototype.updateUserList = function () {
+        this.selectedUser = this.ks.client.user.getAll();
+        this.currentUsers = [];
+        for (var userId in this.selectedUser) {
+            // console.log(userId);
+            this.currentUsers.push(userId);
+            console.log(this.currentUsers);
+        }
+        this.selectedUser = this.currentUsers[0];
+        console.log(this.selectedUser);
+        console.log(this.selectedUser.length);
+        if (this.currentUsers.length === 1) {
+            this.renderUser(this.currentUsers);
+        }
+    };
+    AddressDirectoryComponent.prototype.renderUser = function (id) {
+        var getUser = id || this.getSelectedUser();
+        console.log(getUser[0]);
+        if (getUser[0]) {
+            var user = this.ks.client.user.get(getUser[0]);
+            console.log(user);
+            document.getElementById('results').innerHTML = JSON.stringify(user, null, 4);
+        }
+    };
+    AddressDirectoryComponent.prototype.updateContactsTable = function () {
+        var table = document.getElementById('table');
+        table.innerHTML = '';
+        var br = document.createElement('br');
+        var contacts = this.ks.client.contacts.getAll();
+        console.log(contacts);
+        for (var contactId in contacts) {
+            for (var prop in contacts[contactId]) {
+                console.log(prop);
+                console.log(contacts[contactId][prop]);
+                var tr = document.createElement('tr');
+                var th = document.createElement('th');
+                var td = document.createElement('td');
+                table.appendChild(tr);
+                tr.appendChild(th);
+                tr.appendChild(td);
+                th.innerHTML = prop;
+                td.innerHTML = contacts[contactId][prop];
+            }
+        }
+        table.appendChild(br);
+    };
+    AddressDirectoryComponent.prototype.addContacts = function () {
+        console.log(this.buddy, this.contactId);
+        var table = document.getElementById('table');
+        table.innerHTML = "";
+        var getContact = this.getContactFormData();
+        console.log(getContact);
+        for (var property in getContact) {
+            var tr = document.createElement('tr');
+            var th = document.createElement('th');
+            var td = document.createElement('td');
+            table.appendChild(tr);
+            tr.appendChild(th);
+            tr.appendChild(td);
+            th.innerHTML = property;
+            td.innerHTML = getContact[property];
+        }
+        if (!getContact || !getContact.contactId) {
+            this.log('Cannot add a contact to Address Book without a contact ID!');
+        }
+        else {
+            this.ks.client.contacts.add(this.getContactFormData());
+        }
+        return table;
+    };
+    AddressDirectoryComponent.prototype.getContactFormData = function () {
+        var contactId = this.contactId;
+        var primaryContact = this.primaryContact;
+        var firstName = this.firstName;
+        var lastName = this.lastName;
+        var homePhoneNumber = this.homePhoneNumber;
+        var businessPhoneNumber = this.businessPhone;
+        var emailAddress = this.email;
+        var buddy = this.buddy;
+        return { contactId: contactId, primaryContact: primaryContact, firstName: firstName, lastName: lastName, homePhoneNumber: homePhoneNumber, businessPhoneNumber: businessPhoneNumber, emailAddress: emailAddress, buddy: buddy };
+    };
+    AddressDirectoryComponent.prototype.removeContacts = function () {
+        this.ks.client.contacts.remove(this.contactId);
+        this.log('Contact removed successfully!');
+    };
+    AddressDirectoryComponent.prototype.updateContacts = function () {
+        var contacts = this.ks.client.contacts.getAll();
+        console.log(contacts);
+        var upContact = this.getContactFormData();
+        if (upContact) {
+            if (!upContact.contactId) {
+                this.log('Cannot update a contact with no contact ID');
+            }
+            else {
+                this.ks.client.contacts.update(upContact.contactId, upContact);
+                this.log('Contact updated successfully!');
+            }
+        }
+    };
+    AddressDirectoryComponent.prototype.clearContacts = function () {
+        this.contactId = "";
+        this.primaryContact = "";
+        this.firstName = "";
+        this.lastName = "";
+        this.homePhoneNumber = "";
+        this.businessPhone = "";
+        this.email = "";
+        this.buddy = false;
+    };
+    AddressDirectoryComponent.prototype.refreshContacts = function () {
+        this.ks.client.contacts.refresh();
+        this.log('Contacts refreshed successfully!');
+    };
+    AddressDirectoryComponent.prototype.log = function (message) {
+        var messageDiv = document.getElementById('messageLogs');
+        messageDiv.innerHTML += '<div>' + message + '</div>';
+        messageDiv.scrollTop = messageDiv.scrollHeight;
+        messageDiv.scrollIntoView(false);
     };
     AddressDirectoryComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -77,7 +240,7 @@ var AddressDirectoryComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./address-directory.component.html */ "./src/app/address-directory/address-directory.component.html"),
             styles: [__webpack_require__(/*! ./address-directory.component.css */ "./src/app/address-directory/address-directory.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [app_kandy_service__WEBPACK_IMPORTED_MODULE_1__["KandyService"]])
     ], AddressDirectoryComponent);
     return AddressDirectoryComponent;
 }());
@@ -105,7 +268,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _chat_chat_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./chat/chat.component */ "./src/app/chat/chat.component.ts");
 /* harmony import */ var _presence_presence_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./presence/presence.component */ "./src/app/presence/presence.component.ts");
 /* harmony import */ var _address_directory_address_directory_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./address-directory/address-directory.component */ "./src/app/address-directory/address-directory.component.ts");
-/* harmony import */ var _auth_guard__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./auth.guard */ "./src/app/auth.guard.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -121,15 +283,14 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
 var routes = [
-    { path: 'call', component: _call_call_component__WEBPACK_IMPORTED_MODULE_2__["CallComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
-    { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"], },
-    { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
-    { path: 'sms', component: _sms_sms_component__WEBPACK_IMPORTED_MODULE_5__["SmsComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
-    { path: 'chat', component: _chat_chat_component__WEBPACK_IMPORTED_MODULE_6__["ChatComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
-    { path: 'presence', component: _presence_presence_component__WEBPACK_IMPORTED_MODULE_7__["PresenceComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
-    { path: 'addressDirectory', component: _address_directory_address_directory_component__WEBPACK_IMPORTED_MODULE_8__["AddressDirectoryComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
+    { path: 'call', component: _call_call_component__WEBPACK_IMPORTED_MODULE_2__["CallComponent"] },
+    { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"] },
+    { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"] },
+    { path: 'sms', component: _sms_sms_component__WEBPACK_IMPORTED_MODULE_5__["SmsComponent"] },
+    { path: 'chat', component: _chat_chat_component__WEBPACK_IMPORTED_MODULE_6__["ChatComponent"] },
+    { path: 'presence', component: _presence_presence_component__WEBPACK_IMPORTED_MODULE_7__["PresenceComponent"] },
+    { path: 'addressDirectory', component: _address_directory_address_directory_component__WEBPACK_IMPORTED_MODULE_8__["AddressDirectoryComponent"] },
     { path: '', redirectTo: 'login', pathMatch: 'full' },
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -156,7 +317,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".app-container {\r\n\tpadding: 64px 0 0 0;\r\n\tmargin: 10px 10px;\r\n}\r\n.app-content {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tbox-sizing: border-box;\r\n}\r\nmat-toolbar {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    z-index: 2;\r\n}\r\n@media only screen and (max-width: 600px) {\r\n\t.app-container {\r\n\t\tmargin: 0 0;\r\n\t\tpadding: 56px 0 0 0;\r\n\t}\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxtQkFBbUI7Q0FDbkIsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxXQUFXO0NBQ1gsWUFBWTtDQUNaLHNCQUFzQjtBQUN2QjtBQUNBO0lBQ0ksZUFBZTtJQUNmLE1BQU07SUFDTixPQUFPO0lBQ1AsUUFBUTtJQUNSLFVBQVU7QUFDZDtBQUNBO0NBQ0M7RUFDQyxXQUFXO0VBQ1gsbUJBQW1CO0NBQ3BCO0FBQ0QiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hcHAtY29udGFpbmVyIHtcclxuXHRwYWRkaW5nOiA2NHB4IDAgMCAwO1xyXG5cdG1hcmdpbjogMTBweCAxMHB4O1xyXG59XHJcbi5hcHAtY29udGVudCB7XHJcblx0d2lkdGg6IDEwMCU7XHJcblx0aGVpZ2h0OiAxMDAlO1xyXG5cdGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbn1cclxubWF0LXRvb2xiYXIge1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgbGVmdDogMDtcclxuICAgIHJpZ2h0OiAwO1xyXG4gICAgei1pbmRleDogMjtcclxufVxyXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XHJcblx0LmFwcC1jb250YWluZXIge1xyXG5cdFx0bWFyZ2luOiAwIDA7XHJcblx0XHRwYWRkaW5nOiA1NnB4IDAgMCAwO1xyXG5cdH1cclxufSJdfQ== */"
+module.exports = ".app-container {\n\tpadding: 64px 0 0 0;\n\tmargin: 10px 10px;\n}\n.app-content {\n\twidth: 100%;\n\theight: 100%;\n\tbox-sizing: border-box;\n}\nmat-toolbar {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    z-index: 2;\n}\n@media only screen and (max-width: 600px) {\n\t.app-container {\n\t\tmargin: 0 0;\n\t\tpadding: 56px 0 0 0;\n\t}\n}\n.btn-logout {\n\tposition: absolute; \n\tright: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxtQkFBbUI7Q0FDbkIsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxXQUFXO0NBQ1gsWUFBWTtDQUNaLHNCQUFzQjtBQUN2QjtBQUNBO0lBQ0ksZUFBZTtJQUNmLE1BQU07SUFDTixPQUFPO0lBQ1AsUUFBUTtJQUNSLFVBQVU7QUFDZDtBQUNBO0NBQ0M7RUFDQyxXQUFXO0VBQ1gsbUJBQW1CO0NBQ3BCO0FBQ0Q7QUFDQTtDQUNDLGtCQUFrQjtDQUNsQixXQUFXO0FBQ1oiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hcHAtY29udGFpbmVyIHtcblx0cGFkZGluZzogNjRweCAwIDAgMDtcblx0bWFyZ2luOiAxMHB4IDEwcHg7XG59XG4uYXBwLWNvbnRlbnQge1xuXHR3aWR0aDogMTAwJTtcblx0aGVpZ2h0OiAxMDAlO1xuXHRib3gtc2l6aW5nOiBib3JkZXItYm94O1xufVxubWF0LXRvb2xiYXIge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogMDtcbiAgICByaWdodDogMDtcbiAgICB6LWluZGV4OiAyO1xufVxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xuXHQuYXBwLWNvbnRhaW5lciB7XG5cdFx0bWFyZ2luOiAwIDA7XG5cdFx0cGFkZGluZzogNTZweCAwIDAgMDtcblx0fVxufVxuLmJ0bi1sb2dvdXQge1xuXHRwb3NpdGlvbjogYWJzb2x1dGU7IFxuXHRyaWdodDogMTBweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -167,7 +328,7 @@ module.exports = ".app-container {\r\n\tpadding: 64px 0 0 0;\r\n\tmargin: 10px 1
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"app-container\">\r\n  <mat-toolbar color=\"primary\">\r\n    <span>AT &amp; T Sample Applications</span>\r\n    <button mat-icon-button (click)=\"Logout()\" style=\"position: absolute; right: 10px\">\r\n      <mat-icon>power_settings_new</mat-icon>\r\n    </button>\r\n  </mat-toolbar>\r\n  <div class=\"app-content\">\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n</div>"
+module.exports = "<mat-sidenav-container fullscreen>\n  <mat-sidenav #sidenav mode=\"push\" class=\"app-sidenav\" (click)=\"sidenav.toggle()\">\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"{{nav.link}}\" *ngFor=\"let nav of fillerNav\">\n        <mat-icon mat-list-icon>{{nav.icon}}</mat-icon>\n        <span mat-line>{{nav.name}}</span>\n      </a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <div class=\"app-container\">\n    <mat-toolbar color=\"primary\">\n      <button mat-icon-button (click)=\"sidenav.toggle()\" *ngIf=\"!showMenu\">\n        <mat-icon>menu</mat-icon>\n      </button>\n\n      <span>Kandy CPaaS2 Sample Application using Angular</span>\n      <button mat-icon-button (click)=\"Logout()\" class=\"btn-logout\">\n        <mat-icon>power_settings_new</mat-icon>\n      </button>\n    </mat-toolbar>\n    <div class=\"app-content\">\n      <router-outlet></router-outlet>\n    </div>\n  </div>\n</mat-sidenav-container>"
 
 /***/ }),
 
@@ -183,6 +344,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _kandy_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./kandy.service */ "./src/app/kandy.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -194,11 +356,57 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var AppComponent = /** @class */ (function () {
-    function AppComponent(router) {
+    function AppComponent(router, ks) {
         this.router = router;
+        this.ks = ks;
+        this.fillerNav = [
+            {
+                name: 'SMS',
+                link: 'sms',
+                icon: 'textsms'
+            },
+            {
+                name: 'Chat',
+                link: 'chat',
+                icon: 'chat'
+            },
+            {
+                name: 'Audio/Video Call',
+                link: 'call',
+                icon: 'video_call'
+            },
+            {
+                name: 'Presence',
+                link: 'presence',
+                icon: 'contacts'
+            },
+            {
+                name: 'Directory & Address-book',
+                link: 'addressDirectory',
+                icon: 'contact_phone'
+            },
+            {
+                name: 'Dashboard',
+                link: 'dashboard',
+                icon: 'dashboard'
+            }
+        ];
     }
     AppComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.showMenu = this.ks.showNav;
+        console.log(this.showMenu);
+        this.router.events.subscribe(function (val) {
+            if (val instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationStart"]) {
+                if (val.url == '/dashboard') {
+                    _this.showMenu = !_this.ks.showNav;
+                    console.log(_this.showMenu);
+                }
+                console.log(val.url);
+            }
+        });
     };
     AppComponent.prototype.Logout = function () {
         var username = localStorage.getItem('Username');
@@ -217,7 +425,7 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _kandy_service__WEBPACK_IMPORTED_MODULE_2__["KandyService"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -252,8 +460,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _presence_presence_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./presence/presence.component */ "./src/app/presence/presence.component.ts");
 /* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _address_directory_address_directory_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./address-directory/address-directory.component */ "./src/app/address-directory/address-directory.component.ts");
-/* harmony import */ var _auth_guard__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./auth.guard */ "./src/app/auth.guard.ts");
+/* harmony import */ var _kandy_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./kandy.service */ "./src/app/kandy.service.ts");
+/* harmony import */ var _address_directory_address_directory_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./address-directory/address-directory.component */ "./src/app/address-directory/address-directory.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -291,7 +499,7 @@ var AppModule = /** @class */ (function () {
                 _chat_chat_component__WEBPACK_IMPORTED_MODULE_12__["ChatComponent"],
                 _presence_presence_component__WEBPACK_IMPORTED_MODULE_13__["PresenceComponent"],
                 _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DashboardComponent"],
-                _address_directory_address_directory_component__WEBPACK_IMPORTED_MODULE_16__["AddressDirectoryComponent"]
+                _address_directory_address_directory_component__WEBPACK_IMPORTED_MODULE_17__["AddressDirectoryComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -302,65 +510,14 @@ var AppModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatFormFieldModule"],
                 _angular_material_radio__WEBPACK_IMPORTED_MODULE_10__["MatRadioModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HttpClientModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSelectModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatCheckboxModule"]
             ],
-            providers: [_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]],
+            providers: [_kandy_service__WEBPACK_IMPORTED_MODULE_16__["KandyService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/auth.guard.ts":
-/*!*******************************!*\
-  !*** ./src/app/auth.guard.ts ***!
-  \*******************************/
-/*! exports provided: AuthGuard */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuard", function() { return AuthGuard; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _kandy_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./kandy.service */ "./src/app/kandy.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var AuthGuard = /** @class */ (function () {
-    function AuthGuard(ks, router) {
-        this.ks = ks;
-        this.router = router;
-    }
-    AuthGuard.prototype.canActivate = function (next, state) {
-        if (this.ks.isLoggedIn) {
-            return true;
-        }
-        else {
-            this.router.navigate(['/login']);
-            return false;
-        }
-    };
-    AuthGuard = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
-            providedIn: 'root'
-        }),
-        __metadata("design:paramtypes", [_kandy_service__WEBPACK_IMPORTED_MODULE_2__["KandyService"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
-    ], AuthGuard);
-    return AuthGuard;
 }());
 
 
@@ -374,7 +531,7 @@ var AuthGuard = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-card {\r\n    margin-bottom: 10px;\r\n  }\r\n  \r\n  mat-card {\r\n    border-top: 1px solid whitesmoke;\r\n  \r\n  }\r\n  \r\n  mat-card-actions {\r\n    margin: 5px 2px 5px 2px;\r\n    display: inline-block;\r\n  }\r\n  \r\n  mat-form-field {\r\n    width: 100%;\r\n  }\r\n  \r\n  button {\r\n    display: inline-block;\r\n    margin-right: 8px;\r\n  }\r\n  \r\n  .call-card {\r\n    \r\n  }\r\n  \r\n  .video-card {\r\n    width: 320px;\r\n    display: inline-block;\r\n  }\r\n  \r\n  .gap-rt {\r\n    margin-right: 10px;\r\n  }\r\n  \r\n  #remote-container {\r\n    background: slategrey;\r\n    width: 320px;\r\n    height: 280px;\r\n  }\r\n  \r\n  #local-container {\r\n    background: slategrey;\r\n    width: 320px;\r\n    height: 280px;\r\n  }\r\n  \r\n  #console {\r\n    background-color: darkslategrey;\r\n    color: white;\r\n    font-size: 12px;\r\n    position: fixed;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    height: 100px;\r\n    padding: 5px 5px;\r\n  }\r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2FsbC9jYWxsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxtQkFBbUI7RUFDckI7O0VBRUE7SUFDRSxnQ0FBZ0M7O0VBRWxDOztFQUNBO0lBQ0UsdUJBQXVCO0lBQ3ZCLHFCQUFxQjtFQUN2Qjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLHFCQUFxQjtJQUNyQixpQkFBaUI7RUFDbkI7O0VBRUE7O0VBRUE7O0VBRUE7SUFDRSxZQUFZO0lBQ1oscUJBQXFCO0VBQ3ZCOztFQUVBO0lBQ0Usa0JBQWtCO0VBQ3BCOztFQUVBO0lBQ0UscUJBQXFCO0lBQ3JCLFlBQVk7SUFDWixhQUFhO0VBQ2Y7O0VBRUE7SUFDRSxxQkFBcUI7SUFDckIsWUFBWTtJQUNaLGFBQWE7RUFDZjs7RUFFQTtJQUNFLCtCQUErQjtJQUMvQixZQUFZO0lBQ1osZUFBZTtJQUNmLGVBQWU7SUFDZixTQUFTO0lBQ1QsT0FBTztJQUNQLFFBQVE7SUFDUixhQUFhO0lBQ2IsZ0JBQWdCO0VBQ2xCIiwiZmlsZSI6InNyYy9hcHAvY2FsbC9jYWxsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtY2FyZCB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG4gIH1cclxuICBcclxuICBtYXQtY2FyZCB7XHJcbiAgICBib3JkZXItdG9wOiAxcHggc29saWQgd2hpdGVzbW9rZTtcclxuICBcclxuICB9XHJcbiAgbWF0LWNhcmQtYWN0aW9ucyB7XHJcbiAgICBtYXJnaW46IDVweCAycHggNXB4IDJweDtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICB9XHJcbiAgXHJcbiAgbWF0LWZvcm0tZmllbGQge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG5cclxuICBidXR0b24ge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiA4cHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5jYWxsLWNhcmQge1xyXG4gICAgXHJcbiAgfVxyXG4gIFxyXG4gIC52aWRlby1jYXJkIHtcclxuICAgIHdpZHRoOiAzMjBweDtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICB9XHJcbiAgXHJcbiAgLmdhcC1ydCB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XHJcbiAgfVxyXG4gIFxyXG4gICNyZW1vdGUtY29udGFpbmVyIHtcclxuICAgIGJhY2tncm91bmQ6IHNsYXRlZ3JleTtcclxuICAgIHdpZHRoOiAzMjBweDtcclxuICAgIGhlaWdodDogMjgwcHg7XHJcbiAgfVxyXG4gIFxyXG4gICNsb2NhbC1jb250YWluZXIge1xyXG4gICAgYmFja2dyb3VuZDogc2xhdGVncmV5O1xyXG4gICAgd2lkdGg6IDMyMHB4O1xyXG4gICAgaGVpZ2h0OiAyODBweDtcclxuICB9XHJcbiAgXHJcbiAgI2NvbnNvbGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogZGFya3NsYXRlZ3JleTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGZvbnQtc2l6ZTogMTJweDtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIGJvdHRvbTogMDtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICByaWdodDogMDtcclxuICAgIGhlaWdodDogMTAwcHg7XHJcbiAgICBwYWRkaW5nOiA1cHggNXB4O1xyXG4gIH1cclxuICAiXX0= */"
+module.exports = "mat-card {\n    margin-bottom: 10px;\n  }\n  \n  mat-card {\n    border-top: 1px solid whitesmoke;\n  \n  }\n  \n  mat-card-actions {\n    margin: 5px 2px 5px 2px;\n    display: inline-block;\n  }\n  \n  mat-form-field {\n    width: 100%;\n  }\n  \n  button {\n    display: inline-block;\n    margin-right: 8px;\n    margin-bottom: 8px;\n  }\n  \n  .call-card {\n    \n  }\n  \n  .video-card {\n    width: 320px;\n    display: inline-block;\n  }\n  \n  .gap-rt {\n    margin-right: 10px;\n  }\n  \n  #remote-container {\n    background: slategrey;\n    width: 320px;\n    height: 280px;\n  }\n  \n  #local-container {\n    background: slategrey;\n    width: 320px;\n    height: 280px;\n  }\n  \n  #console {\n    background-color: darkslategrey;\n    color: white;\n    font-size: 12px;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    height: 100px;\n    padding: 5px 5px;\n  }\n  \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2FsbC9jYWxsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxtQkFBbUI7RUFDckI7O0VBRUE7SUFDRSxnQ0FBZ0M7O0VBRWxDOztFQUNBO0lBQ0UsdUJBQXVCO0lBQ3ZCLHFCQUFxQjtFQUN2Qjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLHFCQUFxQjtJQUNyQixpQkFBaUI7SUFDakIsa0JBQWtCO0VBQ3BCOztFQUVBOztFQUVBOztFQUVBO0lBQ0UsWUFBWTtJQUNaLHFCQUFxQjtFQUN2Qjs7RUFFQTtJQUNFLGtCQUFrQjtFQUNwQjs7RUFFQTtJQUNFLHFCQUFxQjtJQUNyQixZQUFZO0lBQ1osYUFBYTtFQUNmOztFQUVBO0lBQ0UscUJBQXFCO0lBQ3JCLFlBQVk7SUFDWixhQUFhO0VBQ2Y7O0VBRUE7SUFDRSwrQkFBK0I7SUFDL0IsWUFBWTtJQUNaLGVBQWU7SUFDZixlQUFlO0lBQ2YsU0FBUztJQUNULE9BQU87SUFDUCxRQUFRO0lBQ1IsYUFBYTtJQUNiLGdCQUFnQjtFQUNsQiIsImZpbGUiOiJzcmMvYXBwL2NhbGwvY2FsbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWNhcmQge1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gIH1cbiAgXG4gIG1hdC1jYXJkIHtcbiAgICBib3JkZXItdG9wOiAxcHggc29saWQgd2hpdGVzbW9rZTtcbiAgXG4gIH1cbiAgbWF0LWNhcmQtYWN0aW9ucyB7XG4gICAgbWFyZ2luOiA1cHggMnB4IDVweCAycHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG4gIFxuICBtYXQtZm9ybS1maWVsZCB7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cblxuICBidXR0b24ge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcbiAgICBtYXJnaW4tYm90dG9tOiA4cHg7XG4gIH1cbiAgXG4gIC5jYWxsLWNhcmQge1xuICAgIFxuICB9XG4gIFxuICAudmlkZW8tY2FyZCB7XG4gICAgd2lkdGg6IDMyMHB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuICBcbiAgLmdhcC1ydCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xuICB9XG4gIFxuICAjcmVtb3RlLWNvbnRhaW5lciB7XG4gICAgYmFja2dyb3VuZDogc2xhdGVncmV5O1xuICAgIHdpZHRoOiAzMjBweDtcbiAgICBoZWlnaHQ6IDI4MHB4O1xuICB9XG4gIFxuICAjbG9jYWwtY29udGFpbmVyIHtcbiAgICBiYWNrZ3JvdW5kOiBzbGF0ZWdyZXk7XG4gICAgd2lkdGg6IDMyMHB4O1xuICAgIGhlaWdodDogMjgwcHg7XG4gIH1cbiAgXG4gICNjb25zb2xlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBkYXJrc2xhdGVncmV5O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBmb250LXNpemU6IDEycHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogMDtcbiAgICBsZWZ0OiAwO1xuICAgIHJpZ2h0OiAwO1xuICAgIGhlaWdodDogMTAwcHg7XG4gICAgcGFkZGluZzogNXB4IDVweDtcbiAgfVxuICAiXX0= */"
 
 /***/ }),
 
@@ -385,7 +542,7 @@ module.exports = "mat-card {\r\n    margin-bottom: 10px;\r\n  }\r\n  \r\n  mat-c
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"call-card\">\r\n  <mat-card-title>Make a Call</mat-card-title>\r\n  <mat-card-content>\r\n    <mat-form-field>\r\n      <mat-label>Enter the SIP Id</mat-label>\r\n      <input matInput type=\"text\" name=\"number\" id=\"number\" [(ngModel)]=\"number\" placeholder=\"sip:janedoe@somedomain.com\" required>\r\n      <mat-hint>e.g., sip:&lt;userId&gt;@&lt;domain&gt;</mat-hint>\r\n    </mat-form-field>\r\n  </mat-card-content>\r\n  <!-- <mat-card-actions> -->\r\n    <button mat-raised-button (click)=\"makeAudioCall($event)\" color=\"primary\">Make Audio Call</button>\r\n    <button mat-raised-button (click)=\"makeVideoCall($event)\" color=\"primary\">Make Video Call</button>\r\n    <button mat-raised-button (click)=\"answerAudioCall($event)\" color=\"primary\">Answer Audio Call</button> \r\n    <button mat-raised-button (click)=\"answerVideoCall($event)\" color=\"primary\">Answer Video Call</button> \r\n    <button mat-raised-button (click)=\"rejectCall()\" color=\"primary\">Reject Call</button>\r\n    <button mat-raised-button (click)=\"endCall()\" color=\"primary\">End Call</button>\r\n  <!-- </mat-card-actions> -->\r\n</mat-card>\r\n\r\n<mat-card class=\"video-card gap-rt\">\r\n  <mat-card-title>Local Video</mat-card-title>\r\n  <mat-card-content>\r\n    <div id=\"local-container\"></div>\r\n  </mat-card-content>\r\n</mat-card>\r\n\r\n<mat-card class=\"video-card\">\r\n  <mat-card-title>Remote Video</mat-card-title>\r\n  <mat-card-content>\r\n    <div id=\"remote-container\"></div>\r\n  </mat-card-content>\r\n</mat-card>\r\n\r\n<mat-card class=\"example-card\">\r\n  <mat-card-title>Messages</mat-card-title>\r\n  <mat-card-content>\r\n    <div id=\"messages\">\r\n    {{ message }}\r\n  </div>\r\n  </mat-card-content>\r\n</mat-card>"
+module.exports = "<div class=\"login-card\">\n  <mat-card>\n    <mat-card-title>CALL</mat-card-title>\n    <mat-card-content>Subscribe to Call Services using Websocket channel</mat-card-content>\n    <button mat-raised-button (click)=\"subscribe()\" color=\"primary\">Subscribe</button>\n  </mat-card>\n\n  <mat-card class=\"call-card\">\n    <mat-card-title>Make a Call</mat-card-title>\n    <mat-card-content>\n      <mat-form-field>\n        <input matInput type=\"text\" name=\"number\" id=\"number\" [(ngModel)]=\"number\" placeholder=\"Enter the SIP Id\" required>\n        <mat-hint>e.g., sip:&lt;userId&gt;@&lt;domain&gt;</mat-hint>\n      </mat-form-field>\n    </mat-card-content>\n    <!-- <mat-card-actions> -->\n      <button mat-raised-button (click)=\"makeAudioCall($event)\" color=\"primary\">Make Audio Call</button>\n      <button mat-raised-button (click)=\"makeVideoCall($event)\" color=\"primary\">Make Video Call</button>\n      <button mat-raised-button (click)=\"answerAudioCall($event)\" color=\"primary\">Answer Audio Call</button> \n      <button mat-raised-button (click)=\"answerVideoCall($event)\" color=\"primary\">Answer Video Call</button> \n      <button mat-raised-button (click)=\"rejectCall()\" color=\"primary\">Reject Call</button>\n      <button mat-raised-button (click)=\"endCall()\" color=\"primary\">End Call</button>\n    <!-- </mat-card-actions> -->\n  </mat-card>\n\n  <mat-card class=\"video-card gap-rt\">\n    <mat-card-title>Local Video</mat-card-title>\n    <mat-card-content>\n      <div id=\"local-container\"></div>\n    </mat-card-content>\n  </mat-card>\n\n  <mat-card class=\"video-card\">\n    <mat-card-title>Remote Video</mat-card-title>\n    <mat-card-content>\n      <div id=\"remote-container\"></div>\n    </mat-card-content>\n  </mat-card>\n\n  <mat-card class=\"example-card\">\n    <mat-card-title>Messages</mat-card-title>\n    <mat-card-content>\n      <div id=\"messages\">\n      {{ message }}\n    </div>\n    </mat-card-content>\n  </mat-card>\n</div>"
 
 /***/ }),
 
@@ -555,7 +712,7 @@ var CallComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-card {\r\n\tmargin-bottom: 10px;\r\n}\r\nmat-card mat-card-actions {\r\n\tborder-top: 1px solid whitesmoke;\r\n}\r\nmat-form-field.login-full-width {\r\n\twidth: 100%;\r\n}\r\n#chatContent {\r\n    background: lightgrey;\r\n    height: 200px;\r\n    overflow-y: scroll;\r\n    scroll-behavior: smooth;\r\n    padding: 10px 10px;\r\n    margin-bottom: 5px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2hhdC9jaGF0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxtQkFBbUI7QUFDcEI7QUFDQTtDQUNDLGdDQUFnQztBQUNqQztBQUNBO0NBQ0MsV0FBVztBQUNaO0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsYUFBYTtJQUNiLGtCQUFrQjtJQUNsQix1QkFBdUI7SUFDdkIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL2NoYXQvY2hhdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWNhcmQge1xyXG5cdG1hcmdpbi1ib3R0b206IDEwcHg7XHJcbn1cclxubWF0LWNhcmQgbWF0LWNhcmQtYWN0aW9ucyB7XHJcblx0Ym9yZGVyLXRvcDogMXB4IHNvbGlkIHdoaXRlc21va2U7XHJcbn1cclxubWF0LWZvcm0tZmllbGQubG9naW4tZnVsbC13aWR0aCB7XHJcblx0d2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbiNjaGF0Q29udGVudCB7XHJcbiAgICBiYWNrZ3JvdW5kOiBsaWdodGdyZXk7XHJcbiAgICBoZWlnaHQ6IDIwMHB4O1xyXG4gICAgb3ZlcmZsb3cteTogc2Nyb2xsO1xyXG4gICAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XHJcbiAgICBwYWRkaW5nOiAxMHB4IDEwcHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOiA1cHg7XHJcbn0iXX0= */"
+module.exports = "mat-card {\n\tmargin-bottom: 10px;\n}\nmat-card mat-card-actions {\n\tborder-top: 1px solid whitesmoke;\n}\nmat-form-field.login-full-width {\n\twidth: 100%;\n}\n#chatContent {\n    background: lightgrey;\n    height: 200px;\n    overflow-y: scroll;\n    scroll-behavior: smooth;\n    padding: 10px 10px;\n    margin-bottom: 5px;\n}\n.pad-vt {\n\tpadding-top: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2hhdC9jaGF0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxtQkFBbUI7QUFDcEI7QUFDQTtDQUNDLGdDQUFnQztBQUNqQztBQUNBO0NBQ0MsV0FBVztBQUNaO0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsYUFBYTtJQUNiLGtCQUFrQjtJQUNsQix1QkFBdUI7SUFDdkIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtBQUN0QjtBQUVBO0NBQ0MsaUJBQWlCO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvY2hhdC9jaGF0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtY2FyZCB7XG5cdG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5tYXQtY2FyZCBtYXQtY2FyZC1hY3Rpb25zIHtcblx0Ym9yZGVyLXRvcDogMXB4IHNvbGlkIHdoaXRlc21va2U7XG59XG5tYXQtZm9ybS1maWVsZC5sb2dpbi1mdWxsLXdpZHRoIHtcblx0d2lkdGg6IDEwMCU7XG59XG5cbiNjaGF0Q29udGVudCB7XG4gICAgYmFja2dyb3VuZDogbGlnaHRncmV5O1xuICAgIGhlaWdodDogMjAwcHg7XG4gICAgb3ZlcmZsb3cteTogc2Nyb2xsO1xuICAgIHNjcm9sbC1iZWhhdmlvcjogc21vb3RoO1xuICAgIHBhZGRpbmc6IDEwcHggMTBweDtcbiAgICBtYXJnaW4tYm90dG9tOiA1cHg7XG59XG5cbi5wYWQtdnQge1xuXHRwYWRkaW5nLXRvcDogMTBweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -566,7 +723,7 @@ module.exports = "mat-card {\r\n\tmargin-bottom: 10px;\r\n}\r\nmat-card mat-card
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"login-card\">\n  <mat-card-title>Subscribe to Chat Services using Websocket channel</mat-card-title>\n  <button mat-raised-button (click)=\"subscribe()\" color=\"primary\" id=\"log\">Subscribe</button>\n</mat-card>\n<mat-card>\n  <mat-card-title>Conversations</mat-card-title>\n  <h3>Enter their User Id in the given format : </h3>\n  <sub><i>example: janedoe@somedomain.com ([userId]@[domain])</i></sub>\n  <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Enter their User ID\" [(ngModel)]=\"contactId\" [value]=\"contactId\" name=\"contactId\" required>\n  </mat-form-field>\n  <!-- <br> -->\n  <h3>Create Conversation</h3>\n  <button mat-raised-button (click)=\"conversation()\" color=\"primary\" id=\"log\">Create</button>\n</mat-card>\n\n<mat-card>\n  <mat-card-title>Chat History : </mat-card-title>\n  <div id=\"chatContent\">\n    \n  </div>\n</mat-card>\n\n<mat-card>\n  <mat-card-title>Message to conversation : </mat-card-title>\n  <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Enter your message\" [(ngModel)]=\"chatMessage\" [value]=\"chatMessage\" name=\"chatMessage\" required>\n  </mat-form-field>\n  <!-- <br> -->\n  <button mat-raised-button (click)=\"sendMessage()\" color=\"primary\" id=\"log\">Send</button>\n</mat-card>\n\n<mat-card class=\"log-card\">\n  <mat-card-title>Messages</mat-card-title>\n  <mat-card-content>\n    <div id=\"messageLogs\">{{ message }}</div>\n  </mat-card-content>\n</mat-card>"
+module.exports = "<div class=\"login-card\">\n\n  <mat-card>\n    <mat-card-title>CHAT</mat-card-title>\n    <mat-card-content>Subscribe to Chat Services using Websocket channel</mat-card-content>\n    <button mat-raised-button (click)=\"subscribe()\" color=\"primary\">Subscribe</button>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Conversations</mat-card-title>\n    <mat-card-content>\n      <mat-form-field class=\"login-full-width\">\n          <input matInput placeholder=\"Enter their User ID\" [(ngModel)]=\"contactId\" [value]=\"contactId\" name=\"contactId\" required>\n          <mat-hint>e.g., &lt;userId&gt;@&lt;domain&gt;</mat-hint>\n      </mat-form-field>\n    </mat-card-content>\n    <button mat-raised-button (click)=\"conversation()\" color=\"primary\">Create Conversation</button>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Chat History</mat-card-title>\n    <div id=\"chatContent\"></div>\n    <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"Type your message\" [(ngModel)]=\"chatMessage\" [value]=\"chatMessage\" name=\"chatMessage\" required>\n    </mat-form-field>\n    <button mat-raised-button (click)=\"sendMessage()\" color=\"primary\">Send</button>\n  </mat-card>\n\n  <mat-card class=\"log-card\">\n    <mat-card-title>Messages</mat-card-title>\n    <mat-card-content>\n      <div id=\"messageLogs\">{{ message }}</div>\n    </mat-card-content>\n  </mat-card>\n\n</div>"
 
 /***/ }),
 
@@ -705,7 +862,7 @@ var ChatComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-card {\r\n\tmargin-bottom: 10px;\r\n}\r\nmat-card mat-card-actions {\r\n\tborder-top: 1px solid whitesmoke;\r\n}\r\nmat-form-field.login-full-width {\r\n\twidth: 100%;\r\n}\r\nbutton {\r\n    display: inline-block;\r\n    margin-right: 8px;\r\n}\r\n/* mat-card-actions {\r\n\tmargin: 5px 2px 5px 2px;\r\n    display: inline-block;\r\n} */\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MsbUJBQW1CO0FBQ3BCO0FBQ0E7Q0FDQyxnQ0FBZ0M7QUFDakM7QUFDQTtDQUNDLFdBQVc7QUFDWjtBQUVBO0lBQ0kscUJBQXFCO0lBQ3JCLGlCQUFpQjtBQUNyQjtBQUVBOzs7R0FHRyIsImZpbGUiOiJzcmMvYXBwL2Rhc2hib2FyZC9kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIm1hdC1jYXJkIHtcclxuXHRtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG59XHJcbm1hdC1jYXJkIG1hdC1jYXJkLWFjdGlvbnMge1xyXG5cdGJvcmRlci10b3A6IDFweCBzb2xpZCB3aGl0ZXNtb2tlO1xyXG59XHJcbm1hdC1mb3JtLWZpZWxkLmxvZ2luLWZ1bGwtd2lkdGgge1xyXG5cdHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG5idXR0b24ge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiA4cHg7XHJcbn1cclxuXHJcbi8qIG1hdC1jYXJkLWFjdGlvbnMge1xyXG5cdG1hcmdpbjogNXB4IDJweCA1cHggMnB4O1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG59ICovIl19 */"
+module.exports = "h1 {\n\ttext-align: center;\n\tdisplay: inline-block;\n\tvertical-align: middle;\n}\n.inparaico {\n\tfont-size: 14px;\n    padding: 0 5px 0 5px;\n    width: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0Msa0JBQWtCO0NBQ2xCLHFCQUFxQjtDQUNyQixzQkFBc0I7QUFDdkI7QUFDQTtDQUNDLGVBQWU7SUFDWixvQkFBb0I7SUFDcEIsV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaDEge1xuXHR0ZXh0LWFsaWduOiBjZW50ZXI7XG5cdGRpc3BsYXk6IGlubGluZS1ibG9jaztcblx0dmVydGljYWwtYWxpZ246IG1pZGRsZTtcbn1cbi5pbnBhcmFpY28ge1xuXHRmb250LXNpemU6IDE0cHg7XG4gICAgcGFkZGluZzogMCA1cHggMCA1cHg7XG4gICAgd2lkdGg6IDEwcHg7XG59Il19 */"
 
 /***/ }),
 
@@ -716,7 +873,7 @@ module.exports = "mat-card {\r\n\tmargin-bottom: 10px;\r\n}\r\nmat-card mat-card
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"login-card\">\n  <mat-card-title>Welcome to AT &amp; T Dashboard, You can select from the given options to try one of our sample apps :\n  </mat-card-title>\n\n  <button mat-raised-button (click)=\"sms()\" color=\"primary\" id=\"log\">SMS</button>\n  <button mat-raised-button (click)=\"chat()\" color=\"primary\" id=\"log\">CHAT</button>\n  <button mat-raised-button (click)=\"audiovideo()\" color=\"primary\" id=\"log\">AUDIO/VIDEO</button>\n  <button mat-raised-button (click)=\"presence()\" color=\"primary\" id=\"log\">PRESENCE</button>\n  <button mat-raised-button (click)=\"addressDirectory()\" color=\"primary\" id=\"log\">Directory & Address Book</button>\n</mat-card>"
+module.exports = "<mat-card>\n  <mat-card-title>Dashboard</mat-card-title>\n  <mat-card-content>\n    Explore our various sample apps by selecting the module from the sidebar that will open by clicking on <b>Menu</b> <mat-icon mat-list-icon class=\"inparaico\">menu</mat-icon> icon on top-left corner in the header-bar.\n  </mat-card-content>\n</mat-card>"
 
 /***/ }),
 
@@ -747,6 +904,38 @@ var DashboardComponent = /** @class */ (function () {
     function DashboardComponent(router, _ngZone) {
         this.router = router;
         this._ngZone = _ngZone;
+        this.fillerNav = [
+            {
+                name: 'SMS',
+                link: 'sms',
+                icon: 'textsms'
+            },
+            {
+                name: 'Chat',
+                link: 'chat',
+                icon: 'chat'
+            },
+            {
+                name: 'Audio/Video Call',
+                link: 'call',
+                icon: 'video_call'
+            },
+            {
+                name: 'Presence',
+                link: 'presence',
+                icon: 'contacts'
+            },
+            {
+                name: 'Directory & AddressBook',
+                link: 'addressDirectory',
+                icon: 'contact_phone'
+            },
+            {
+                name: 'Back to Dashboard Page',
+                link: 'dashboard',
+                icon: 'dashboard'
+            }
+        ];
         window['DashboardComponent'] = { component: this, zone: _ngZone };
     }
     DashboardComponent.prototype.ngOnInit = function () {
@@ -860,15 +1049,17 @@ var KandyService = /** @class */ (function () {
         this.client.on('subscription:error', function (params) {
             console.log('Subscription Error: ' + params.error.message + ' (' + params.error.code + ')');
         });
-        window.onload = function () {
-            localStorage.removeItem('LoggedInUser');
-            localStorage.removeItem('PrivateKey');
-            localStorage.removeItem('PrivateSecret');
-        };
     }
     KandyService.prototype.setLoggedIn = function (value) {
         this.loggedInStatus = value;
     };
+    Object.defineProperty(KandyService.prototype, "showNav", {
+        get: function () {
+            return true;
+        },
+        enumerable: true,
+        configurable: true
+    });
     Object.defineProperty(KandyService.prototype, "isLoggedIn", {
         get: function () {
             return localStorage.getItem('LoggedInUser') || localStorage.getItem('PrivateKey') || localStorage.getItem('PrivateSecret');
@@ -936,7 +1127,7 @@ var KandyService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-card {\r\n\tmargin-bottom: 10px;\r\n}\r\nmat-card mat-card-actions {\r\n\tborder-top: 1px solid whitesmoke;\r\n}\r\nmat-form-field.login-full-width {\r\n\twidth: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtDQUNDLG1CQUFtQjtBQUNwQjtBQUNBO0NBQ0MsZ0NBQWdDO0FBQ2pDO0FBQ0E7Q0FDQyxXQUFXO0FBQ1oiLCJmaWxlIjoic3JjL2FwcC9sb2dpbi9sb2dpbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWNhcmQge1xyXG5cdG1hcmdpbi1ib3R0b206IDEwcHg7XHJcbn1cclxubWF0LWNhcmQgbWF0LWNhcmQtYWN0aW9ucyB7XHJcblx0Ym9yZGVyLXRvcDogMXB4IHNvbGlkIHdoaXRlc21va2U7XHJcbn1cclxubWF0LWZvcm0tZmllbGQubG9naW4tZnVsbC13aWR0aCB7XHJcblx0d2lkdGg6IDEwMCU7XHJcbn0iXX0= */"
+module.exports = "mat-card {\n\tmargin-bottom: 10px;\n}\nmat-card mat-card-actions {\n\tborder-top: 1px solid whitesmoke;\n}\nmat-form-field.login-full-width {\n\twidth: 100%;\n}\n.pad-rt {\n\tpadding: 8px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtDQUNDLG1CQUFtQjtBQUNwQjtBQUNBO0NBQ0MsZ0NBQWdDO0FBQ2pDO0FBQ0E7Q0FDQyxXQUFXO0FBQ1o7QUFDQTtDQUNDLFlBQVk7QUFDYiIsImZpbGUiOiJzcmMvYXBwL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtY2FyZCB7XG5cdG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5tYXQtY2FyZCBtYXQtY2FyZC1hY3Rpb25zIHtcblx0Ym9yZGVyLXRvcDogMXB4IHNvbGlkIHdoaXRlc21va2U7XG59XG5tYXQtZm9ybS1maWVsZC5sb2dpbi1mdWxsLXdpZHRoIHtcblx0d2lkdGg6IDEwMCU7XG59XG4ucGFkLXJ0IHtcblx0cGFkZGluZzogOHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -947,7 +1138,7 @@ module.exports = "mat-card {\r\n\tmargin-bottom: 10px;\r\n}\r\nmat-card mat-card
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"login-card\">\r\n  <mat-card-title>Login</mat-card-title>\r\n  <mat-card-content>\r\n    <mat-form-field class=\"login-full-width\">\r\n      <input matInput placeholder=\"Server URL\" [(ngModel)]=\"serverurl\" [value]=\"serverurl\" name=\"serverurl\" required>\r\n    </mat-form-field>\r\n    <mat-radio-group (change)=\"onChangeLoginType($event)\" [(ngModel)]=\"loginType\">\r\n      <mat-radio-button style=\"padding : 8px\" value=\"passwordGrant\">Password Grant</mat-radio-button>\r\n      <mat-radio-button style=\"padding : 8px\" value=\"clientCredentials\">Client Credentials</mat-radio-button>\r\n    </mat-radio-group>\r\n  </mat-card-content>\r\n  <mat-card-content *ngIf=\"loginType == 'passwordGrant'\">\r\n    <mat-form-field class=\"login-full-width\">\r\n      <input matInput placeholder=\"Client ID\" [(ngModel)]=\"clientid\" [value]=\"clientid\" name=\"clientid\" required>\r\n    </mat-form-field>\r\n    <mat-form-field class=\"login-full-width\">\r\n      <input matInput placeholder=\"Username\" [(ngModel)]=\"user\" [value]=\"user\" name=\"user\" required>\r\n    </mat-form-field>\r\n    <mat-form-field class=\"login-full-width\">\r\n      <input matInput placeholder=\"Password\" [(ngModel)]=\"pass\" [value]=\"pass\" type=\"password\" name=\"pass\" required>\r\n    </mat-form-field>\r\n    <mat-form-field class=\"login-full-width\">\r\n      <input matInput placeholder=\"Contact Number\" [(ngModel)]=\"contact\" [value]=\"contact\" type=\"text\" name=\"contact\"\r\n        required>\r\n    </mat-form-field>\r\n  </mat-card-content>\r\n  <mat-card-content *ngIf=\"loginType == 'clientCredentials'\">\r\n    <mat-form-field class=\"login-full-width\">\r\n      <input matInput placeholder=\"Private project key\" [(ngModel)]=\"privateKey\" [value]=\"privateKey\" name=\"privateKey\"\r\n        required>\r\n    </mat-form-field>\r\n    <mat-form-field class=\"login-full-width\">\r\n      <input matInput placeholder=\"Private project secret\" [(ngModel)]=\"privateSecret\" [value]=\"privateSecret\"\r\n        name=\"privateSecret\" required>\r\n    </mat-form-field>\r\n    <mat-form-field class=\"login-full-width\">\r\n      <input matInput placeholder=\"Contact Number\" [(ngModel)]=\"contact\" [value]=\"contact\" type=\"text\" name=\"contact\"\r\n        required>\r\n    </mat-form-field>\r\n  </mat-card-content>\r\n  <mat-card-actions>\r\n    <button mat-raised-button (click)=\"login()\" color=\"primary\" id=\"log\">Login</button>\r\n  </mat-card-actions>\r\n</mat-card>\r\n<mat-card class=\"log-card\">\r\n  <mat-card-title>Messages</mat-card-title>\r\n  <mat-card-content>\r\n    <div id=\"messages\">{{ message }}</div>\r\n  </mat-card-content>\r\n</mat-card>"
+module.exports = "<mat-card class=\"login-card\">\n  <mat-card-title>Login</mat-card-title>\n  <mat-card-content>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Server URL\" [(ngModel)]=\"serverurl\" [value]=\"serverurl\" name=\"serverurl\" required>\n    </mat-form-field>\n    <mat-radio-group (change)=\"onChangeLoginType($event)\" [(ngModel)]=\"loginType\">\n      <mat-radio-button class=\"pad-rt\" value=\"passwordGrant\">Password Grant</mat-radio-button>\n      <mat-radio-button class=\"pad-rt\" value=\"clientCredentials\">Client Credentials</mat-radio-button>\n    </mat-radio-group>\n  </mat-card-content>\n  <mat-card-content *ngIf=\"loginType == 'passwordGrant'\">\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Client ID\" [(ngModel)]=\"clientid\" [value]=\"clientid\" name=\"clientid\" required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Username\" [(ngModel)]=\"user\" [value]=\"user\" name=\"user\" required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Password\" [(ngModel)]=\"pass\" [value]=\"pass\" type=\"password\" name=\"pass\" required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Contact Number\" [(ngModel)]=\"contact\" [value]=\"contact\" type=\"text\" name=\"contact\"\n        required>\n    </mat-form-field>\n  </mat-card-content>\n  <mat-card-content *ngIf=\"loginType == 'clientCredentials'\">\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Private project key\" [(ngModel)]=\"privateKey\" [value]=\"privateKey\" name=\"privateKey\"\n        required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Private project secret\" [(ngModel)]=\"privateSecret\" [value]=\"privateSecret\"\n        name=\"privateSecret\" required>\n    </mat-form-field>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Contact Number\" [(ngModel)]=\"contact\" [value]=\"contact\" type=\"text\" name=\"contact\"\n        required>\n    </mat-form-field>\n  </mat-card-content>\n  <mat-card-actions>\n    <button mat-raised-button (click)=\"login()\" color=\"primary\" id=\"log\">Login</button>\n  </mat-card-actions>\n</mat-card>\n<mat-card class=\"log-card\">\n  <mat-card-title>Messages</mat-card-title>\n  <mat-card-content>\n    <div id=\"messages\">{{ message }}</div>\n  </mat-card-content>\n</mat-card>"
 
 /***/ }),
 
@@ -964,6 +1155,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var app_kandy_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! app/kandy.service */ "./src/app/kandy.service.ts");
+var __assign = (undefined && undefined.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -976,11 +1175,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var LoginComponent = /** @class */ (function () {
-    function LoginComponent(_router, _ngZone, ks) {
+    function LoginComponent(_router, _ngZone, ks, route) {
         this._router = _router;
         this._ngZone = _ngZone;
         this.ks = ks;
+        this.route = route;
         this.clientid = '';
         this.user = '';
         this.pass = '';
@@ -995,7 +1196,20 @@ var LoginComponent = /** @class */ (function () {
         console.log(this.ks);
     }
     LoginComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this.log(this.message);
+        this.route.queryParamMap.subscribe(function (params) {
+            _this.qpMap = __assign({}, params.keys, params);
+        });
+        console.log('Query Param Map:', this.qpMap);
+        this.serverurl = ('url' in this.qpMap.params) ? this.qpMap.params['url'] : this.serverurl;
+        this.loginType = ('mod' in this.qpMap.params) ? this.qpMap.params['mod'] : this.loginType;
+        this.clientid = ('cid' in this.qpMap.params) ? this.qpMap.params['cid'] : this.clientid;
+        this.user = ('usr' in this.qpMap.params) ? this.qpMap.params['usr'] : this.user;
+        this.pass = ('psw' in this.qpMap.params) ? this.qpMap.params['psw'] : this.pass;
+        this.contact = ('cnt' in this.qpMap.params) ? this.qpMap.params['cnt'] : this.contact;
+        this.privateKey = ('pvk' in this.qpMap.params) ? this.qpMap.params['pvk'] : this.privateKey;
+        this.privateSecret = ('pvs' in this.qpMap.params) ? this.qpMap.params['pvs'] : this.privateSecret;
     };
     LoginComponent.prototype.onChangeLoginType = function (mrChange) {
         this.loginType = mrChange.value;
@@ -1004,7 +1218,7 @@ var LoginComponent = /** @class */ (function () {
         var _this = this;
         if (this.loginType == 'passwordGrant') {
             if (this.user && this.pass && this.clientid && this.contact) {
-                localStorage.setItem('Username', this.user);
+                // localStorage.setItem('LoggedInUser', this.user);
                 this.ks.client.updateConfig({ messaging: { 'contact': this.contact } });
                 this.ks.getTokenPassGrant(this.user, this.pass, this.clientid, this.serverurl).subscribe(function (response) {
                     console.log(response);
@@ -1042,6 +1256,7 @@ var LoginComponent = /** @class */ (function () {
                 var subscriptionType = 'websocket';
                 this.ks.client.services.subscribe(services, subscriptionType);
                 this._router.navigate(['/dashboard']);
+                // showMenu = this.ks.showNav;
             }
             else {
                 this.clientid = '';
@@ -1058,6 +1273,7 @@ var LoginComponent = /** @class */ (function () {
                 var subscriptionType = 'websocket';
                 this.ks.client.services.subscribe(services, subscriptionType);
                 this._router.navigate(['/dashboard']);
+                // showMenu = this.ks.showNav;
             }
             else {
                 this.privateKey = '';
@@ -1091,7 +1307,7 @@ var LoginComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./login.component.html */ "./src/app/login/login.component.html"),
             styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], app_kandy_service__WEBPACK_IMPORTED_MODULE_2__["KandyService"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], app_kandy_service__WEBPACK_IMPORTED_MODULE_2__["KandyService"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -1107,7 +1323,7 @@ var LoginComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".scrollable {\r\n    overflow: hidden;\r\n    overflow-y: auto;\r\n}\r\n\r\n.dropdown {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    padding: 4px;\r\n    margin: 10px 0;\r\n}\r\n\r\n.update {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    margin: 14px 0;\r\n    padding: 4px;\r\n}\r\n\r\nmat-card {\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\nmat-card mat-card-actions {\r\n\tborder-top: 1px solid whitesmoke;\r\n}\r\n\r\nmat-form-field.login-full-width {\r\n\twidth: 100%;\r\n}\r\n\r\nbutton {\r\n    display: inline-block;\r\n    margin-right: 8px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJlc2VuY2UvcHJlc2VuY2UuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsc0JBQXNCO0lBQ3RCLFlBQVk7SUFDWixjQUFjO0FBQ2xCOztBQUVBO0lBQ0kscUJBQXFCO0lBQ3JCLHNCQUFzQjtJQUN0QixjQUFjO0lBQ2QsWUFBWTtBQUNoQjs7QUFFQTtDQUNDLG1CQUFtQjtBQUNwQjs7QUFDQTtDQUNDLGdDQUFnQztBQUNqQzs7QUFDQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtJQUNJLHFCQUFxQjtJQUNyQixpQkFBaUI7QUFDckIiLCJmaWxlIjoic3JjL2FwcC9wcmVzZW5jZS9wcmVzZW5jZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNjcm9sbGFibGUge1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICAgIG92ZXJmbG93LXk6IGF1dG87XHJcbn1cclxuXHJcbi5kcm9wZG93biB7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gICAgcGFkZGluZzogNHB4O1xyXG4gICAgbWFyZ2luOiAxMHB4IDA7XHJcbn1cclxuXHJcbi51cGRhdGUge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICAgIG1hcmdpbjogMTRweCAwO1xyXG4gICAgcGFkZGluZzogNHB4O1xyXG59XHJcblxyXG5tYXQtY2FyZCB7XHJcblx0bWFyZ2luLWJvdHRvbTogMTBweDtcclxufVxyXG5tYXQtY2FyZCBtYXQtY2FyZC1hY3Rpb25zIHtcclxuXHRib3JkZXItdG9wOiAxcHggc29saWQgd2hpdGVzbW9rZTtcclxufVxyXG5tYXQtZm9ybS1maWVsZC5sb2dpbi1mdWxsLXdpZHRoIHtcclxuXHR3aWR0aDogMTAwJTtcclxufVxyXG5cclxuYnV0dG9uIHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIG1hcmdpbi1yaWdodDogOHB4O1xyXG59Il19 */"
+module.exports = ".scrollable {\n    overflow: hidden;\n    overflow-y: auto;\n}\n\n.dropdown {\n    display: inline-block;\n    vertical-align: middle;\n    padding: 4px;\n    margin: 10px 0;\n}\n\n.update {\n    display: inline-block;\n    vertical-align: middle;\n    margin: 14px 0;\n    padding: 4px;\n}\n\nmat-card {\n\tmargin-bottom: 10px;\n}\n\nmat-card mat-card-actions {\n\tborder-top: 1px solid whitesmoke;\n}\n\nmat-form-field.login-full-width {\n\twidth: 100%;\n}\n\nbutton {\n    display: inline-block;\n    margin-right: 8px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJlc2VuY2UvcHJlc2VuY2UuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsc0JBQXNCO0lBQ3RCLFlBQVk7SUFDWixjQUFjO0FBQ2xCOztBQUVBO0lBQ0kscUJBQXFCO0lBQ3JCLHNCQUFzQjtJQUN0QixjQUFjO0lBQ2QsWUFBWTtBQUNoQjs7QUFFQTtDQUNDLG1CQUFtQjtBQUNwQjs7QUFDQTtDQUNDLGdDQUFnQztBQUNqQzs7QUFDQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtJQUNJLHFCQUFxQjtJQUNyQixpQkFBaUI7QUFDckIiLCJmaWxlIjoic3JjL2FwcC9wcmVzZW5jZS9wcmVzZW5jZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNjcm9sbGFibGUge1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgb3ZlcmZsb3cteTogYXV0bztcbn1cblxuLmRyb3Bkb3duIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgICBwYWRkaW5nOiA0cHg7XG4gICAgbWFyZ2luOiAxMHB4IDA7XG59XG5cbi51cGRhdGUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xuICAgIG1hcmdpbjogMTRweCAwO1xuICAgIHBhZGRpbmc6IDRweDtcbn1cblxubWF0LWNhcmQge1xuXHRtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxubWF0LWNhcmQgbWF0LWNhcmQtYWN0aW9ucyB7XG5cdGJvcmRlci10b3A6IDFweCBzb2xpZCB3aGl0ZXNtb2tlO1xufVxubWF0LWZvcm0tZmllbGQubG9naW4tZnVsbC13aWR0aCB7XG5cdHdpZHRoOiAxMDAlO1xufVxuXG5idXR0b24ge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -1118,7 +1334,7 @@ module.exports = ".scrollable {\r\n    overflow: hidden;\r\n    overflow-y: auto
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"scollable\">\n  <mat-card class=\"login-card\">\n    <mat-card-title>Subscribe to SMS Services using Websocket channel</mat-card-title>\n    <button mat-raised-button (click)=\"subscribe()\" color=\"primary\" id=\"log\">Subscribe</button>\n    <button mat-raised-button (click)=\"populateDropdown()\" color=\"primary\" id=\"log\">Populate Dropdown</button>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Update your presence on Websocket Channel</mat-card-title>\n    <h4>Status</h4>\n    <div class=\"dropdown\">\n      <mat-form-field>\n        <mat-select placeholder=\"Select One\" [(ngModel)]=\"selectedStatus\" (selectionChange)=\"itemList(selectedStatus)\">\n          <mat-option *ngFor=\"let status of currentStatus\" [value]=\"status\">\n            {{status}}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n    </div>\n    <h4>Activity</h4>\n    <div class=\"dropdown\">\n      <mat-form-field>\n        <mat-select placeholder=\"Select One\" [(ngModel)]=\"selectedActivity\"\n          (selectionChange)=\"itemActivity(selectedActivity)\">\n          <mat-option *ngFor=\"let activity of currentAct\" [value]=\"activity\">\n            {{activity}}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n    </div>\n    <h3>Note : </h3>\n    <div class=\"update\">\n      <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"Enter Note\" [(ngModel)]=\"note\" [value]=\"note\" name=\"note\" required>\n      </mat-form-field>\n      <button mat-raised-button (click)=\"updatePresence()\" color=\"primary\" id=\"log\">Update</button>\n    </div>\n\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Subscribe (watch) user</mat-card-title>\n    <h4>User ID : </h4>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Enter User ID\" [(ngModel)]=\"userId\" [value]=\"userId\" name=\"userId\" required>\n    </mat-form-field>\n    <button mat-raised-button (click)=\"subscribeUser()\" color=\"primary\" id=\"log\">Subscribe</button>\n    <button mat-raised-button (click)=\"unsubscribeUser()\" color=\"primary\" id=\"log\">Unsubscribe</button>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Fetch and Get presence</mat-card-title>\n    <h4>User ID : </h4>\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Enter User ID\" [(ngModel)]=\"getUserId\" [value]=\"getUserId\" name=\"getUserId\" required>\n    </mat-form-field>\n    <button mat-raised-button (click)=\"fetchUser()\" color=\"primary\" id=\"log\">Fetch</button>\n    <button mat-raised-button (click)=\"getUser()\" color=\"primary\" id=\"log\">Get</button>\n    <button mat-raised-button (click)=\"clearActivity()\" color=\"primary\" id=\"log\">Clear Activities</button>\n  </mat-card>\n\n  <mat-card class=\"log-card\">\n    <mat-card-title>Presence Activity</mat-card-title>\n    <mat-card-content>\n      <div id=\"presenceActivity\">\n\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  <mat-card class=\"log-card\">\n    <mat-card-title>Messages</mat-card-title>\n    <mat-card-content>\n      <div id=\"messageLogs\">{{ message }}</div>\n    </mat-card-content>\n  </mat-card>\n</div>"
+module.exports = "<div id=\"scollable\" class=\"login-card\">\n  <mat-card>\n    <mat-card-title>PRESENCE</mat-card-title>\n    <mat-card-content>Subscribe to Presence Services using Websocket channel</mat-card-content>\n    <button mat-raised-button (click)=\"subscribe()\" color=\"primary\" id=\"log\">Subscribe</button>\n    <button mat-raised-button (click)=\"populateDropdown()\" color=\"primary\" id=\"log\">Populate Dropdown</button>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Update your presence on Websocket Channel</mat-card-title>\n    <!-- <h4>Status</h4> -->\n    <div class=\"dropdown\">\n      <mat-form-field>\n        <mat-label>Status</mat-label>\n        <mat-select placeholder=\"Select One\" [(ngModel)]=\"selectedStatus\" (selectionChange)=\"itemList(selectedStatus)\">\n          <mat-option *ngFor=\"let status of currentStatus\" [value]=\"status\">\n            {{status}}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n    </div>\n    <!-- <h4>Activity</h4> -->\n    <div class=\"dropdown\">\n      <mat-form-field>\n        <mat-label>Activity</mat-label>\n        <mat-select placeholder=\"Select One\" [(ngModel)]=\"selectedActivity\"\n          (selectionChange)=\"itemActivity(selectedActivity)\">\n          <mat-option *ngFor=\"let activity of currentAct\" [value]=\"activity\">\n            {{activity}}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n    </div>\n    <br>\n    <!-- <h3>Note : </h3> -->\n    <div class=\"update\">\n      <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"Enter Note\" [(ngModel)]=\"note\" [value]=\"note\" name=\"note\" required>\n      </mat-form-field>\n      <button mat-raised-button (click)=\"updatePresence()\" color=\"primary\" id=\"log\">Update</button>\n    </div>\n\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Subscribe (watch) user</mat-card-title>\n    <!-- <h4>User ID : </h4> -->\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Enter User ID\" [(ngModel)]=\"userId\" [value]=\"userId\" name=\"userId\" required>\n    </mat-form-field>\n    <button mat-raised-button (click)=\"subscribeUser()\" color=\"primary\" id=\"log\">Subscribe</button>\n    <button mat-raised-button (click)=\"unsubscribeUser()\" color=\"primary\" id=\"log\">Unsubscribe</button>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Fetch and Get presence</mat-card-title>\n    <!-- <h4>User ID : </h4> -->\n    <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Enter User ID\" [(ngModel)]=\"getUserId\" [value]=\"getUserId\" name=\"getUserId\" required>\n    </mat-form-field>\n    <button mat-raised-button (click)=\"fetchUser()\" color=\"primary\" id=\"log\">Fetch</button>\n    <button mat-raised-button (click)=\"getUser()\" color=\"primary\" id=\"log\">Get</button>\n    <button mat-raised-button (click)=\"clearActivity()\" color=\"primary\" id=\"log\">Clear Activities</button>\n  </mat-card>\n\n  <mat-card class=\"log-card\">\n    <mat-card-title>Presence Activity</mat-card-title>\n    <mat-card-content>\n      <div id=\"presenceActivity\">\n\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  <mat-card class=\"log-card\">\n    <mat-card-title>Messages</mat-card-title>\n    <mat-card-content>\n      <div id=\"messageLogs\">{{ message }}</div>\n    </mat-card-content>\n  </mat-card>\n</div>"
 
 /***/ }),
 
@@ -1383,7 +1599,7 @@ var SharedModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-card {\r\n\tmargin-bottom: 10px;\r\n}\r\nmat-card mat-card-actions {\r\n\tborder-top: 1px solid whitesmoke;\r\n}\r\nmat-form-field.login-full-width {\r\n\twidth: 100%;\r\n}\r\n#smsContent {\r\n    background: lightgrey;\r\n    height: 200px;\r\n    overflow-y: scroll;\r\n    scroll-behavior: smooth;\r\n    padding: 10px 10px;\r\n    margin-bottom: 5px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc21zL3Ntcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MsbUJBQW1CO0FBQ3BCO0FBQ0E7Q0FDQyxnQ0FBZ0M7QUFDakM7QUFDQTtDQUNDLFdBQVc7QUFDWjtBQUVBO0lBQ0kscUJBQXFCO0lBQ3JCLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsdUJBQXVCO0lBQ3ZCLGtCQUFrQjtJQUNsQixrQkFBa0I7QUFDdEIiLCJmaWxlIjoic3JjL2FwcC9zbXMvc21zLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtY2FyZCB7XHJcblx0bWFyZ2luLWJvdHRvbTogMTBweDtcclxufVxyXG5tYXQtY2FyZCBtYXQtY2FyZC1hY3Rpb25zIHtcclxuXHRib3JkZXItdG9wOiAxcHggc29saWQgd2hpdGVzbW9rZTtcclxufVxyXG5tYXQtZm9ybS1maWVsZC5sb2dpbi1mdWxsLXdpZHRoIHtcclxuXHR3aWR0aDogMTAwJTtcclxufVxyXG5cclxuI3Ntc0NvbnRlbnQge1xyXG4gICAgYmFja2dyb3VuZDogbGlnaHRncmV5O1xyXG4gICAgaGVpZ2h0OiAyMDBweDtcclxuICAgIG92ZXJmbG93LXk6IHNjcm9sbDtcclxuICAgIHNjcm9sbC1iZWhhdmlvcjogc21vb3RoO1xyXG4gICAgcGFkZGluZzogMTBweCAxMHB4O1xyXG4gICAgbWFyZ2luLWJvdHRvbTogNXB4O1xyXG59Il19 */"
+module.exports = "mat-card {\n\tmargin-bottom: 10px;\n}\nmat-card mat-card-actions {\n\tborder-top: 1px solid whitesmoke;\n}\nmat-form-field.login-full-width {\n\twidth: 100%;\n}\n#smsContent {\n    background: lightgrey;\n    height: 200px;\n    overflow-y: scroll;\n    scroll-behavior: smooth;\n    padding: 10px 10px;\n    margin-bottom: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc21zL3Ntcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MsbUJBQW1CO0FBQ3BCO0FBQ0E7Q0FDQyxnQ0FBZ0M7QUFDakM7QUFDQTtDQUNDLFdBQVc7QUFDWjtBQUVBO0lBQ0kscUJBQXFCO0lBQ3JCLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsdUJBQXVCO0lBQ3ZCLGtCQUFrQjtJQUNsQixrQkFBa0I7QUFDdEIiLCJmaWxlIjoic3JjL2FwcC9zbXMvc21zLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtY2FyZCB7XG5cdG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5tYXQtY2FyZCBtYXQtY2FyZC1hY3Rpb25zIHtcblx0Ym9yZGVyLXRvcDogMXB4IHNvbGlkIHdoaXRlc21va2U7XG59XG5tYXQtZm9ybS1maWVsZC5sb2dpbi1mdWxsLXdpZHRoIHtcblx0d2lkdGg6IDEwMCU7XG59XG5cbiNzbXNDb250ZW50IHtcbiAgICBiYWNrZ3JvdW5kOiBsaWdodGdyZXk7XG4gICAgaGVpZ2h0OiAyMDBweDtcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gICAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG4gICAgcGFkZGluZzogMTBweCAxMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDVweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -1394,7 +1610,7 @@ module.exports = "mat-card {\r\n\tmargin-bottom: 10px;\r\n}\r\nmat-card mat-card
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"login-card\">\n  <mat-card-title>Subscribe to SMS Services using Websocket channel</mat-card-title>\n  <button mat-raised-button (click)=\"subscribe()\" color=\"primary\" id=\"log\">Subscribe</button>\n</mat-card>\n<mat-card>\n  <mat-card-title>Conversations</mat-card-title>\n  <h3>Enter their Phone Number in E164 format : </h3>\n  <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Enter Phone Number\" [(ngModel)]=\"number\" [value]=\"number\" name=\"number\" required>\n  </mat-form-field>\n  <!-- <br> -->\n  <h3>Create Conversation</h3>\n  <button mat-raised-button (click)=\"conversation()\" color=\"primary\" id=\"log\">Create</button>\n</mat-card>\n\n<mat-card>\n  <mat-card-title>SMS History : </mat-card-title>\n  <div id=\"smsContent\">\n    \n  </div>\n</mat-card>\n\n<mat-card>\n  <mat-card-title>Message to conversation : </mat-card-title>\n  <mat-form-field class=\"login-full-width\">\n      <input matInput placeholder=\"Enter your message\" [(ngModel)]=\"textMessage\" [value]=\"textMessage\" name=\"textMessage\" required>\n  </mat-form-field>\n  <!-- <br> -->\n  <button mat-raised-button (click)=\"sendMessage()\" color=\"primary\" id=\"log\">Send</button>\n</mat-card>\n\n<mat-card class=\"log-card\">\n  <mat-card-title>Messages</mat-card-title>\n  <mat-card-content>\n    <div id=\"messageLogs\">{{ message }}</div>\n  </mat-card-content>\n</mat-card>"
+module.exports = "<div class=\"login-card\">\n\n  <mat-card>\n    <mat-card-title>SMS</mat-card-title>\n    <mat-card-content>Subscribe to SMS Services using Websocket channel</mat-card-content>\n    <button mat-raised-button (click)=\"subscribe()\" color=\"primary\">Subscribe</button>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Conversations</mat-card-title>\n    <mat-card-content>\n      <mat-form-field class=\"login-full-width\">\n          <input matInput placeholder=\"Enter their phone number\" [(ngModel)]=\"number\" [value]=\"number\" name=\"number\" required>\n          <mat-hint>e.g., in E164 format</mat-hint>\n      </mat-form-field>\n    </mat-card-content>\n    <button mat-raised-button (click)=\"conversation()\" color=\"primary\">Create Conversation</button>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>SMS History</mat-card-title>\n    <div id=\"smsContent\"></div>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-title>Message to conversation</mat-card-title>\n    <mat-card-content>\n      <mat-form-field class=\"login-full-width\">\n        <input matInput placeholder=\"Enter your message\" [(ngModel)]=\"textMessage\" [value]=\"textMessage\" name=\"textMessage\" required>\n      </mat-form-field>\n    </mat-card-content>\n    <button mat-raised-button (click)=\"sendMessage()\" color=\"primary\">Send</button>\n  </mat-card>\n\n  <mat-card class=\"log-card\">\n    <mat-card-title>Messages</mat-card-title>\n    <mat-card-content>\n      <div id=\"messageLogs\">{{ message }}</div>\n    </mat-card-content>\n  </mat-card>\n\n</div>"
 
 /***/ }),
 
@@ -46296,7 +46512,7 @@ function* initializeRemote(webRTC, action) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\neha-ve\Desktop\GitHub\kandy-cpaas2-sample-angular\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/abhishekkumar/Documents/Workshop/HCL/Ribbon/HCLSampleApps/kandy-cpaas2-sample-angular/src/main.ts */"./src/main.ts");
 
 
 /***/ })

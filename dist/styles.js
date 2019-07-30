@@ -18,7 +18,7 @@ module.exports = [[module.i, ".mat-elevation-z0{box-shadow:0 0 0 0 rgba(0,0,0,.2
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\r\nbody {\r\n\tbackground-color: whitesmoke;\r\n\tmargin: 0 0;\r\n\tpadding: 0 0;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhFQUE4RTtBQUM5RTtDQUNDLDRCQUE0QjtDQUM1QixXQUFXO0NBQ1gsWUFBWTtBQUNiIiwiZmlsZSI6InNyYy9zdHlsZXMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogWW91IGNhbiBhZGQgZ2xvYmFsIHN0eWxlcyB0byB0aGlzIGZpbGUsIGFuZCBhbHNvIGltcG9ydCBvdGhlciBzdHlsZSBmaWxlcyAqL1xyXG5ib2R5IHtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZXNtb2tlO1xyXG5cdG1hcmdpbjogMCAwO1xyXG5cdHBhZGRpbmc6IDAgMDtcclxufSJdfQ== */", '', '']]
+module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\nbody {\n\tbackground-color: whitesmoke;\n\tmargin: 0 0;\n\tpadding: 0 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhFQUE4RTtBQUM5RTtDQUNDLDRCQUE0QjtDQUM1QixXQUFXO0NBQ1gsWUFBWTtBQUNiIiwiZmlsZSI6InNyYy9zdHlsZXMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogWW91IGNhbiBhZGQgZ2xvYmFsIHN0eWxlcyB0byB0aGlzIGZpbGUsIGFuZCBhbHNvIGltcG9ydCBvdGhlciBzdHlsZSBmaWxlcyAqL1xuYm9keSB7XG5cdGJhY2tncm91bmQtY29sb3I6IHdoaXRlc21va2U7XG5cdG1hcmdpbjogMCAwO1xuXHRwYWRkaW5nOiAwIDA7XG59Il19 */", '', '']]
 
 /***/ }),
 
@@ -598,8 +598,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\neha-ve\Desktop\GitHub\kandy-cpaas2-sample-angular\src\styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! C:\Users\neha-ve\Desktop\GitHub\kandy-cpaas2-sample-angular\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+__webpack_require__(/*! /Users/abhishekkumar/Documents/Workshop/HCL/Ribbon/HCLSampleApps/kandy-cpaas2-sample-angular/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/abhishekkumar/Documents/Workshop/HCL/Ribbon/HCLSampleApps/kandy-cpaas2-sample-angular/node_modules/@angular/material/prebuilt-themes/indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
 
 
 /***/ })
