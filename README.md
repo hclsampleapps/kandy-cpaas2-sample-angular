@@ -1,4 +1,5 @@
 # kandy-cpaas2-sample-angular
+![Maintenance](https://img.shields.io/maintenance/no/2019?style=flat-square)
 
 ### Kandy CPaaS2 sample in Angular
 
