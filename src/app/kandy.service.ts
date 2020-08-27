@@ -9,8 +9,8 @@ import { URLSearchParams } from '@angular/http';
 export class KandyService {
 
   client: any;
-  base1: string = 'https://oauth-cpaas.att.com/cpaas/auth/v1/token';
-  base2: string = 'https://nvs-cpaas-oauth.kandy.io/cpaas/auth/v1/token';
+  base1: string = 'https://prod-baseurl.domain.com/cpaas/auth/v1/token';
+  base2: string = 'https://stag-baseurl.domain.com/cpaas/auth/v1/token';
   baseUrl1: string = '';
   baseUrl2: string = '';
   fullUrl: string = '/cpaas/auth/v1/token';
